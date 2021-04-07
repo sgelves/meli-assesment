@@ -15,6 +15,12 @@
 		581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581B73A4261E42BA00F37C79 /* LaunchScreen.storyboard */; };
 		581B73B1261E42BA00F37C79 /* meli_assesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73B0261E42BA00F37C79 /* meli_assesmentTests.swift */; };
 		581B73BC261E42BA00F37C79 /* meli_assesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73BB261E42BA00F37C79 /* meli_assesmentUITests.swift */; };
+		581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73DF261E581B00F37C79 /* ProductListVC.swift */; };
+		581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581B73E0261E581B00F37C79 /* ProductListVC.xib */; };
+		581B73E8261E584500F37C79 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73E7261E584500F37C79 /* Networking.swift */; };
+		6CAD9CE99EA4E9D8BE225997 /* Pods_meli_assesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */; };
+		AFDE747B04EC249C2AD70372 /* Pods_meli_assesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */; };
+		EC16122B79981CDE405D8B26 /* Pods_meli_assesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.release.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.release.xcconfig"; sourceTree = "<group>"; };
+		48552C71EC42D696FAFDF3D2 /* Pods-meli assesment-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4CAFA0EDA307B075F5AA66D5 /* Pods-meli assesment-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		581B7396261E42B600F37C79 /* meli assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meli assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		581B7399261E42B600F37C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		581B739B261E42B600F37C79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		581B73B7261E42BA00F37C79 /* meli assesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meli assesmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		581B73BB261E42BA00F37C79 /* meli_assesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meli_assesmentUITests.swift; sourceTree = "<group>"; };
 		581B73BD261E42BA00F37C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581B73DF261E581B00F37C79 /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		581B73E0261E581B00F37C79 /* ProductListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListVC.xib; sourceTree = "<group>"; };
+		581B73E7261E584500F37C79 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC16122B79981CDE405D8B26 /* Pods_meli_assesment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDE747B04EC249C2AD70372 /* Pods_meli_assesmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAD9CE99EA4E9D8BE225997 /* Pods_meli_assesmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E553A40B63388018AB7C3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */,
+				3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */,
+				4CAFA0EDA307B075F5AA66D5 /* Pods-meli assesment-meli assesmentUITests.debug.xcconfig */,
+				48552C71EC42D696FAFDF3D2 /* Pods-meli assesment-meli assesmentUITests.release.xcconfig */,
+				E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */,
+				84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */,
+				DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */,
+				9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		581B738D261E42B600F37C79 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				581B73AF261E42BA00F37C79 /* meli assesmentTests */,
 				581B73BA261E42BA00F37C79 /* meli assesmentUITests */,
 				581B7397261E42B600F37C79 /* Products */,
+				19E553A40B63388018AB7C3A /* Pods */,
+				7433342E850012A192D5A3D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +140,8 @@
 		581B7398261E42B600F37C79 /* meli assesment */ = {
 			isa = PBXGroup;
 			children = (
+				581B73E6261E582900F37C79 /* Networking */,
+				581B73DE261E57AB00F37C79 /* ProductList */,
 				581B7399261E42B600F37C79 /* AppDelegate.swift */,
 				581B739B261E42B600F37C79 /* SceneDelegate.swift */,
 				581B739D261E42B600F37C79 /* ViewController.swift */,
@@ -128,6 +171,33 @@
 			path = "meli assesmentUITests";
 			sourceTree = "<group>";
 		};
+		581B73DE261E57AB00F37C79 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				581B73DF261E581B00F37C79 /* ProductListVC.swift */,
+				581B73E0261E581B00F37C79 /* ProductListVC.xib */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		581B73E6261E582900F37C79 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				581B73E7261E584500F37C79 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7433342E850012A192D5A3D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */,
+				65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */,
+				78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581B73C0261E42BA00F37C79 /* Build configuration list for PBXNativeTarget "meli assesment" */;
 			buildPhases = (
+				FCDED0AA7CF0BE14F0277DB3 /* [CP] Check Pods Manifest.lock */,
 				581B7392261E42B600F37C79 /* Sources */,
 				581B7393261E42B600F37C79 /* Frameworks */,
 				581B7394261E42B600F37C79 /* Resources */,
+				AB0129C1C160AAE621E4F9B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581B73C3261E42BA00F37C79 /* Build configuration list for PBXNativeTarget "meli assesmentTests" */;
 			buildPhases = (
+				9A66DA016DBDAD2FE540D9ED /* [CP] Check Pods Manifest.lock */,
 				581B73A8261E42BA00F37C79 /* Sources */,
 				581B73A9261E42BA00F37C79 /* Frameworks */,
 				581B73AA261E42BA00F37C79 /* Resources */,
@@ -170,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581B73C6261E42BA00F37C79 /* Build configuration list for PBXNativeTarget "meli assesmentUITests" */;
 			buildPhases = (
+				8C20AFA315244CD9D22BCB18 /* [CP] Check Pods Manifest.lock */,
 				581B73B3261E42BA00F37C79 /* Sources */,
 				581B73B4261E42BA00F37C79 /* Frameworks */,
 				581B73B5261E42BA00F37C79 /* Resources */,
@@ -231,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */,
 				581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */,
 				581B73A3261E42BA00F37C79 /* Assets.xcassets in Resources */,
 				581B73A1261E42B600F37C79 /* Main.storyboard in Resources */,
@@ -253,11 +328,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8C20AFA315244CD9D22BCB18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli assesmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A66DA016DBDAD2FE540D9ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli assesmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0129C1C160AAE621E4F9B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meli assesment/Pods-meli assesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-meli assesment/Pods-meli assesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-meli assesment/Pods-meli assesment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDED0AA7CF0BE14F0277DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli assesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		581B7392261E42B600F37C79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */,
+				581B73E8261E584500F37C79 /* Networking.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,
 				581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */,
@@ -433,12 +596,14 @@
 		};
 		581B73C1261E42BA00F37C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9K52DH825;
 				INFOPLIST_FILE = "meli assesment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +617,14 @@
 		};
 		581B73C2261E42BA00F37C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9K52DH825;
 				INFOPLIST_FILE = "meli assesment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +638,7 @@
 		};
 		581B73C4261E42BA00F37C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +661,7 @@
 		};
 		581B73C5261E42BA00F37C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +684,7 @@
 		};
 		581B73C7261E42BA00F37C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +705,7 @@
 		};
 		581B73C8261E42BA00F37C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
