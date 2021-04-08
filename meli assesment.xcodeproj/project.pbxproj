@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,11 @@
 		581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73DF261E581B00F37C79 /* ProductListVC.swift */; };
 		581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581B73E0261E581B00F37C79 /* ProductListVC.xib */; };
 		581B73E8261E584500F37C79 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73E7261E584500F37C79 /* Networking.swift */; };
+		581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73F6261E85AC00F37C79 /* ProductsServices.swift */; };
+		581B73FD261E865000F37C79 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73FC261E865000F37C79 /* Product.swift */; };
+		581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7401261E8CD000F37C79 /* ProductResponse.swift */; };
+		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
+		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
 		6CAD9CE99EA4E9D8BE225997 /* Pods_meli_assesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */; };
 		AFDE747B04EC249C2AD70372 /* Pods_meli_assesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */; };
 		EC16122B79981CDE405D8B26 /* Pods_meli_assesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */; };
@@ -61,6 +66,11 @@
 		581B73DF261E581B00F37C79 /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
 		581B73E0261E581B00F37C79 /* ProductListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListVC.xib; sourceTree = "<group>"; };
 		581B73E7261E584500F37C79 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		581B73F6261E85AC00F37C79 /* ProductsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServices.swift; sourceTree = "<group>"; };
+		581B73FC261E865000F37C79 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		581B7401261E8CD000F37C79 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
 		65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +121,6 @@
 				DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */,
 				9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +149,7 @@
 		581B7398261E42B600F37C79 /* meli assesment */ = {
 			isa = PBXGroup;
 			children = (
+				586E0CDD261F83DF000769CE /* Utils */,
 				581B73E6261E582900F37C79 /* Networking */,
 				581B73DE261E57AB00F37C79 /* ProductList */,
 				581B7399261E42B600F37C79 /* AppDelegate.swift */,
@@ -149,6 +159,7 @@
 				581B73A2261E42BA00F37C79 /* Assets.xcassets */,
 				581B73A4261E42BA00F37C79 /* LaunchScreen.storyboard */,
 				581B73A7261E42BA00F37C79 /* Info.plist */,
+				586E0C6C261F516F000769CE /* GoogleService-Info.plist */,
 			);
 			path = "meli assesment";
 			sourceTree = "<group>";
@@ -183,9 +194,28 @@
 		581B73E6261E582900F37C79 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				581B73FB261E862B00F37C79 /* Models */,
 				581B73E7261E584500F37C79 /* Networking.swift */,
+				581B73F6261E85AC00F37C79 /* ProductsServices.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		581B73FB261E862B00F37C79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				581B73FC261E865000F37C79 /* Product.swift */,
+				581B7401261E8CD000F37C79 /* ProductResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		586E0CDD261F83DF000769CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				586E0CDE261F840D000769CE /* LogUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7433342E850012A192D5A3D6 /* Frameworks */ = {
@@ -210,6 +240,7 @@
 				581B7393261E42B600F37C79 /* Frameworks */,
 				581B7394261E42B600F37C79 /* Resources */,
 				AB0129C1C160AAE621E4F9B1 /* [CP] Embed Pods Frameworks */,
+				586E0C82261F6114000769CE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -307,6 +338,7 @@
 			files = (
 				581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */,
 				581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */,
+				586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */,
 				581B73A3261E42BA00F37C79 /* Assets.xcassets in Resources */,
 				581B73A1261E42B600F37C79 /* Main.storyboard in Resources */,
 			);
@@ -329,6 +361,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		586E0C82261F6114000769CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		8C20AFA315244CD9D22BCB18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,11 +470,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */,
 				581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */,
 				581B73E8261E584500F37C79 /* Networking.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
+				586E0CDF261F840D000769CE /* LogUtils.swift in Sources */,
+				581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,
 				581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */,
+				581B73FD261E865000F37C79 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,9 +656,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = H9K52DH825;
 				INFOPLIST_FILE = "meli assesment/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,7 +680,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9K52DH825;
 				INFOPLIST_FILE = "meli assesment/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

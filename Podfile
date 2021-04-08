@@ -7,6 +7,8 @@ target 'meli assesment' do
 
   # Pods for meli assesment
   pod 'Alamofire', '~> 5.2'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
 
   target 'meli assesmentTests' do
     inherit! :search_paths

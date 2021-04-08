@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
         // Begin UI
         if #available(iOS 13.0, *) {
             // In iOS13+ SceneDelegate will start the UI and manage its lifecycle
@@ -23,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = viewController
             window?.makeKeyAndVisible()
         }
+
+        // Configure frameworks
+        FirebaseApp.configure()
         return true
     }
 
