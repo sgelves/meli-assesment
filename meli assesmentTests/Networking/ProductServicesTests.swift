@@ -15,7 +15,7 @@ extension Networking {}
 
 class ProductServicesTests: XCTestCase {
 
-    private func readLocalFile(forName name: String) throws -> Data?  {
+    private func readLocalFile(forName name: String) throws -> Data? {
 
         if let bundleUrl = Bundle(for: type(of: self)).url(forResource: name, withExtension: "json") {
             let data = try? Data(contentsOf: bundleUrl, options: .mappedIfSafe)
@@ -39,14 +39,15 @@ class ProductServicesTests: XCTestCase {
     func testGetSingleProducts() throws {
         // Given
         let productId = "MLB1698042476"
-        let productPath = String(format: ProductsServices.paths.singleProduct.rawValue, productId)
+        let productPath = String(format: ProductsServices.Paths.singleProduct.rawValue, productId)
         let apiEndpoint = URL(string: "\(Networking.Domain.develop.rawValue)\(productPath)")!
         let jsonData = try readLocalFile(forName: "ProductResponse")
 
         let mock = Mock(url: apiEndpoint, dataType: .json, statusCode: 200, data: [.get: jsonData!])
         mock.register()
 
-        let productJson = try! JSONDecoder().decode(Product.self, from: jsonData!)
+        let productJson = (try? JSONDecoder().decode(Product.self, from: jsonData!))
+            ?? Product(id: "", title: "", thumbnail: "", price: 0.0)
 
         let requestExpectation = expectation(description: "Request should complete")
         let requestErrorExpectation = expectation(description: "Request should fail with error")
@@ -61,7 +62,7 @@ class ProductServicesTests: XCTestCase {
                 XCTAssertTrue(product.thumbnail == productJson.thumbnail)
                 requestExpectation.fulfill()
             case .failure:
-                XCTFail()
+                XCTFail("Request should succeed")
             }
         }
 
@@ -70,7 +71,7 @@ class ProductServicesTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fail")
             case let .failure(err):
                 XCTAssertEqual(ApiError.invalidParameters, err)
                 requestErrorExpectation.fulfill()
@@ -86,7 +87,7 @@ class ProductServicesTests: XCTestCase {
         let offset = 0
         let limit = 10
 
-        let path = ProductsServices.paths.productsList.rawValue
+        let path = ProductsServices.Paths.productsList.rawValue
         let apiEndpoint = URL(string: "\(Networking.Domain.develop.rawValue)\(path)")!
         let jsonData = try readLocalFile(forName: "ProductQueryResponse")
 
@@ -106,7 +107,7 @@ class ProductServicesTests: XCTestCase {
                 XCTAssertGreaterThan(productsList.count, 1)
                 requestExpectation.fulfill()
             case .failure:
-                XCTFail()
+                XCTFail("Request should succeed")
             }
         }
 
@@ -115,7 +116,7 @@ class ProductServicesTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fail")
             case let .failure(err):
                 XCTAssertEqual(ApiError.invalidParameters, err)
                 requestQueryErrorExpectation.fulfill()
@@ -127,7 +128,7 @@ class ProductServicesTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fail")
             case let .failure(err):
                 XCTAssertEqual(ApiError.invalidParameters, err)
                 requestLimitErrorExpectation.fulfill()
@@ -139,7 +140,7 @@ class ProductServicesTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fail")
             case let .failure(err):
                 XCTAssertEqual(ApiError.invalidParameters, err)
                 requestOffsetErrorExpectation.fulfill()

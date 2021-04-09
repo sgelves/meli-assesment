@@ -7,18 +7,18 @@
 
 class ProductsServices {
 
-    enum paths: String {
+    enum Paths: String {
         case productsList = "/sites/MLB/search"
         case singleProduct = "/items/%@"
     }
-    
+
     static func getSingleProducts(byId id: String, completion: @escaping(Result<Product, ApiError>) -> Void) {
         guard !id.isEmpty else {
             completion(.failure(.invalidParameters))
             return
         }
 
-        Networking(path: String(format: paths.singleProduct.rawValue, id) , method: .get)
+        Networking(path: String(format: Paths.singleProduct.rawValue, id) , method: .get)
             .execute(withCodable: Product.self) { (result) in completion(result) }
     }
 
@@ -32,7 +32,7 @@ class ProductsServices {
         }
 
         // Site id MLB is not parametrized on purpose
-        Networking(path: paths.productsList.rawValue,
+        Networking(path: Paths.productsList.rawValue,
                    parameters: ["q": query, "limit": "\(limit)", "offset": "\(offset)"],
                    method: .get)
             .execute(withCodable: ProductResponse.self) { (result) in

@@ -11,6 +11,7 @@ target 'meli assesment' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'Mocker', '~> 2.2.0'
+  pod 'SwiftLint'
 
   target 'meli assesmentTests' do
     inherit! :search_paths

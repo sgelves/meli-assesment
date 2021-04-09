@@ -18,7 +18,7 @@ struct Product: Codable, CustomStringConvertible {
         case thumbnail
         case price
     }
-    
+
     // protocol
     var description: String {
         return #"""

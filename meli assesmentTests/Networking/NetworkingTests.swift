@@ -15,7 +15,7 @@ class NetworkingTests: XCTestCase {
 
     private var sessionManager: Session?
 
-    private func readLocalFile(forName name: String) throws -> Data?  {
+    private func readLocalFile(forName name: String) throws -> Data? {
 
         if let bundleUrl = Bundle(for: type(of: self)).url(forResource: name, withExtension: "json") {
             let data = try? Data(contentsOf: bundleUrl, options: .mappedIfSafe)
@@ -54,7 +54,7 @@ class NetworkingTests: XCTestCase {
                 requestExpectation.fulfill()
             case let .failure(err):
                 debugPrint(err)
-                XCTFail()
+                XCTFail("Request should succeed")
             }
         }
 
@@ -95,7 +95,7 @@ class NetworkingTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fai")
             case let .failure(error):
                 XCTAssertEqual(error, ApiError.methodNotAllowed)
                 requestPostShouldFail.fulfill()
@@ -105,7 +105,7 @@ class NetworkingTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fai")
             case let .failure(error):
                 XCTAssertEqual(error, ApiError.connectionError)
                 requestNetworkShouldFail.fulfill()
@@ -116,7 +116,7 @@ class NetworkingTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fai")
             case let .failure(error):
                 XCTAssertEqual(error, ApiError.jsonParseError)
                 request200ShouldFail.fulfill()
@@ -127,7 +127,7 @@ class NetworkingTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fai")
             case let .failure(error):
                 XCTAssertEqual(error, ApiError.invalidRequest)
                 request400ShouldFail.fulfill()
@@ -138,7 +138,7 @@ class NetworkingTests: XCTestCase {
             // Then
             switch result {
             case .success:
-                XCTFail()
+                XCTFail("Request should fai")
             case let .failure(error):
                 XCTAssertEqual(error, ApiError.serverError)
                 request500ShouldFail.fulfill()
