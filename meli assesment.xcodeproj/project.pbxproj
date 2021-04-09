@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,8 +23,10 @@
 		581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73F6261E85AC00F37C79 /* ProductsServices.swift */; };
 		581B73FD261E865000F37C79 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73FC261E865000F37C79 /* Product.swift */; };
 		581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7401261E8CD000F37C79 /* ProductResponse.swift */; };
+		583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EAE132620988A00E66C2A /* ProductServicesTests.swift */; };
 		58445190261FBDB10054380D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844518F261FBDB10054380D /* NetworkingTests.swift */; };
 		584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 584451A0261FC61E0054380D /* ProductQueryResponse.json */; };
+		586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEBB2620E5A2000C9F9F /* ProductResponse.json */; };
 		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
 		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
 		E0091C73A4C6097535AC4AFC /* libPods-meli assesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */; };
@@ -71,8 +73,10 @@
 		581B73F6261E85AC00F37C79 /* ProductsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServices.swift; sourceTree = "<group>"; };
 		581B73FC261E865000F37C79 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		581B7401261E8CD000F37C79 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		583EAE132620988A00E66C2A /* ProductServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServicesTests.swift; sourceTree = "<group>"; };
 		5844518F261FBDB10054380D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		584451A0261FC61E0054380D /* ProductQueryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductQueryResponse.json; sourceTree = "<group>"; };
+		586DDEBB2620E5A2000C9F9F /* ProductResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
 		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
 		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 			children = (
 				5844519F261FC5DC0054380D /* MockRawData */,
 				5844518F261FBDB10054380D /* NetworkingTests.swift */,
+				583EAE132620988A00E66C2A /* ProductServicesTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				584451A0261FC61E0054380D /* ProductQueryResponse.json */,
+				586DDEBB2620E5A2000C9F9F /* ProductResponse.json */,
 			);
 			path = MockRawData;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */,
 				584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */,
 				581B73B1261E42BA00F37C79 /* meli_assesmentTests.swift in Sources */,
 				58445190261FBDB10054380D /* NetworkingTests.swift in Sources */,
 			);

@@ -10,10 +10,11 @@ import Alamofire
 enum ApiError: Error {
     case connectionError
     case invalidRequest
-    case invalidRequestMethod
+    case methodNotAllowed
     case jsonParseError
     case invalidParameters
     case serverError
+    case alamofireError
 }
 
 class Networking {
@@ -38,7 +39,7 @@ class Networking {
 
     func execute<T: Codable>(withCodable codable: T.Type, completion: @escaping(Result<T, ApiError>) -> Void) {
         guard self.method == .get else {
-            completion(.failure(.invalidRequestMethod))
+            completion(.failure(.methodNotAllowed))
             return
         }
 
@@ -58,31 +59,23 @@ class Networking {
                         completion(.success(decoded))
                     } else {
                         
-                        completion(.failure(.jsonParseError))
-                        
-                        #if DEBUG
-                        LogUtils.debug(withMessage: "\(ApiError.jsonParseError)", andData: response.value)
-                        #else
-                        LogUtils.error(ApiError.jsonParseError, withData: response.value)
-                        #endif
+                        completion(.failure(.alamofireError))
+                        LogUtils.error(ApiError.alamofireError, withData: response.value)
                     }
                     
                 case .failure:
                     
                     var error: ApiError
-                    if let statusCode = response.response?.statusCode {
-                        
-                        switch statusCode {
-                        case 500..<520:
-                            error = .serverError
-                        case 400..<500:
-                            error = .invalidRequest
-                        case 200..<400:
-                            error = .jsonParseError
-                        default:
-                            error = .connectionError
-                        }
-                    } else {
+                    let statusCode = response.response?.statusCode ?? 0
+
+                    switch statusCode {
+                    case 500..<520:
+                        error = .serverError
+                    case 400..<500:
+                        error = .invalidRequest
+                    case 200..<300:
+                        error = .jsonParseError
+                    default:
                         error = .connectionError
                     }
 
