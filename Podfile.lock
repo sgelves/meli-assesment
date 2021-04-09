@@ -68,6 +68,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.3.1):
     - GoogleUtilities/Logger
+  - Mocker (2.2.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Firebase/Analytics
   - Firebase/Crashlytics
+  - Mocker (~> 2.2.0)
 
 SPEC REPOS:
   trunk:
@@ -92,6 +94,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - Mocker
     - nanopb
     - PromisesObjC
 
@@ -106,9 +109,10 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 1c863b1161fc3c8cf614a7460d1be6a7c262aab3
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
+  Mocker: d0ceb340eddd5c28539a691ce67d068674cef9a0
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 22384d69e10d2903ca562439d651f1727c4b4fbe
+PODFILE CHECKSUM: d52edff87ceee86f4ff7d47aac041c4203706b56
 
 COCOAPODS: 1.10.0

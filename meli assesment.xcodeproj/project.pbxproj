@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2577E8ABE72C162BC2DF4F /* libPods-meli assesmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */; };
+		35C714DDCB79FF519086FB4A /* libPods-meli assesmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */; };
 		581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7399261E42B600F37C79 /* AppDelegate.swift */; };
 		581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B739B261E42B600F37C79 /* SceneDelegate.swift */; };
 		581B739E261E42B600F37C79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B739D261E42B600F37C79 /* ViewController.swift */; };
@@ -21,11 +23,11 @@
 		581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73F6261E85AC00F37C79 /* ProductsServices.swift */; };
 		581B73FD261E865000F37C79 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73FC261E865000F37C79 /* Product.swift */; };
 		581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7401261E8CD000F37C79 /* ProductResponse.swift */; };
+		58445190261FBDB10054380D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844518F261FBDB10054380D /* NetworkingTests.swift */; };
+		584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 584451A0261FC61E0054380D /* ProductQueryResponse.json */; };
 		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
 		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
-		6CAD9CE99EA4E9D8BE225997 /* Pods_meli_assesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */; };
-		AFDE747B04EC249C2AD70372 /* Pods_meli_assesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */; };
-		EC16122B79981CDE405D8B26 /* Pods_meli_assesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */; };
+		E0091C73A4C6097535AC4AFC /* libPods-meli assesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +71,15 @@
 		581B73F6261E85AC00F37C79 /* ProductsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServices.swift; sourceTree = "<group>"; };
 		581B73FC261E865000F37C79 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		581B7401261E8CD000F37C79 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		5844518F261FBDB10054380D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		584451A0261FC61E0054380D /* ProductQueryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductQueryResponse.json; sourceTree = "<group>"; };
 		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
-		65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meli_assesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC16122B79981CDE405D8B26 /* Pods_meli_assesment.framework in Frameworks */,
+				E0091C73A4C6097535AC4AFC /* libPods-meli assesment.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFDE747B04EC249C2AD70372 /* Pods_meli_assesmentTests.framework in Frameworks */,
+				2B2577E8ABE72C162BC2DF4F /* libPods-meli assesmentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CAD9CE99EA4E9D8BE225997 /* Pods_meli_assesmentUITests.framework in Frameworks */,
+				35C714DDCB79FF519086FB4A /* libPods-meli assesmentUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +171,8 @@
 		581B73AF261E42BA00F37C79 /* meli assesmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				5844518E261FBD780054380D /* Networking */,
+				5844518C261FBD3D0054380D /* Utils */,
 				581B73B0261E42BA00F37C79 /* meli_assesmentTests.swift */,
 				581B73B2261E42BA00F37C79 /* Info.plist */,
 			);
@@ -210,6 +216,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5844518C261FBD3D0054380D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5844518E261FBD780054380D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5844519F261FC5DC0054380D /* MockRawData */,
+				5844518F261FBDB10054380D /* NetworkingTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5844519F261FC5DC0054380D /* MockRawData */ = {
+			isa = PBXGroup;
+			children = (
+				584451A0261FC61E0054380D /* ProductQueryResponse.json */,
+			);
+			path = MockRawData;
+			sourceTree = "<group>";
+		};
 		586E0CDD261F83DF000769CE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,9 +251,9 @@
 		7433342E850012A192D5A3D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BAE7F9456469706AD3E381B2 /* Pods_meli_assesment.framework */,
-				65ABF284484DB73B7E8ABE96 /* Pods_meli_assesmentTests.framework */,
-				78C45814E511AC6DFF746E09 /* Pods_meli_assesmentUITests.framework */,
+				92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */,
+				B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */,
+				B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -239,7 +269,6 @@
 				581B7392261E42B600F37C79 /* Sources */,
 				581B7393261E42B600F37C79 /* Frameworks */,
 				581B7394261E42B600F37C79 /* Resources */,
-				AB0129C1C160AAE621E4F9B1 /* [CP] Embed Pods Frameworks */,
 				586E0C82261F6114000769CE /* ShellScript */,
 			);
 			buildRules = (
@@ -348,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,23 +454,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB0129C1C160AAE621E4F9B1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-meli assesment/Pods-meli assesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-meli assesment/Pods-meli assesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-meli assesment/Pods-meli assesment-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FCDED0AA7CF0BE14F0277DB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581B73B1261E42BA00F37C79 /* meli_assesmentTests.swift in Sources */,
+				58445190261FBDB10054380D /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
