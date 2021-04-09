@@ -27,6 +27,8 @@
 		58445190261FBDB10054380D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844518F261FBDB10054380D /* NetworkingTests.swift */; };
 		584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 584451A0261FC61E0054380D /* ProductQueryResponse.json */; };
 		586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEBB2620E5A2000C9F9F /* ProductResponse.json */; };
+		586DDEC4262109ED000C9F9F /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DDEC2262109ED000C9F9F /* ProductCellView.swift */; };
+		586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEC3262109ED000C9F9F /* ProductCellView.xib */; };
 		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
 		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
 		E0091C73A4C6097535AC4AFC /* libPods-meli assesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */; };
@@ -77,6 +79,8 @@
 		5844518F261FBDB10054380D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		584451A0261FC61E0054380D /* ProductQueryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductQueryResponse.json; sourceTree = "<group>"; };
 		586DDEBB2620E5A2000C9F9F /* ProductResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
+		586DDEC2262109ED000C9F9F /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		586DDEC3262109ED000C9F9F /* ProductCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
 		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
 		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 			children = (
 				581B73DF261E581B00F37C79 /* ProductListVC.swift */,
 				581B73E0261E581B00F37C79 /* ProductListVC.xib */,
+				586DDEC2262109ED000C9F9F /* ProductCellView.swift */,
+				586DDEC3262109ED000C9F9F /* ProductCellView.xib */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 			files = (
 				581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */,
 				581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */,
+				586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */,
 				586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */,
 				581B73A3261E42BA00F37C79 /* Assets.xcassets in Resources */,
 				581B73A1261E42B600F37C79 /* Main.storyboard in Resources */,
@@ -494,6 +501,7 @@
 				581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */,
 				581B73E8261E584500F37C79 /* Networking.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
+				586DDEC4262109ED000C9F9F /* ProductCellView.swift in Sources */,
 				586E0CDF261F840D000769CE /* LogUtils.swift in Sources */,
 				581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,

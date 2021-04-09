@@ -7,6 +7,7 @@ target 'meli assesment' do
 
   # Pods for meli assesment
   pod 'Alamofire', '~> 5.2'
+  pod 'AlamofireImage', '~> 4.1'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'Mocker', '~> 2.2.0'

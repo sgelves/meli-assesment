@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
 
-            let viewController = ViewController()
+            let viewController = ProductListVC()
             window?.rootViewController = viewController
             window?.makeKeyAndVisible()
         }
