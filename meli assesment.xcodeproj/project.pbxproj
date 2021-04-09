@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2577E8ABE72C162BC2DF4F /* libPods-meli assesmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */; };
+		35C714DDCB79FF519086FB4A /* libPods-meli assesmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */; };
 		581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7399261E42B600F37C79 /* AppDelegate.swift */; };
 		581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B739B261E42B600F37C79 /* SceneDelegate.swift */; };
 		581B739E261E42B600F37C79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B739D261E42B600F37C79 /* ViewController.swift */; };
@@ -15,6 +17,19 @@
 		581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581B73A4261E42BA00F37C79 /* LaunchScreen.storyboard */; };
 		581B73B1261E42BA00F37C79 /* meli_assesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73B0261E42BA00F37C79 /* meli_assesmentTests.swift */; };
 		581B73BC261E42BA00F37C79 /* meli_assesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73BB261E42BA00F37C79 /* meli_assesmentUITests.swift */; };
+		581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73DF261E581B00F37C79 /* ProductListVC.swift */; };
+		581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581B73E0261E581B00F37C79 /* ProductListVC.xib */; };
+		581B73E8261E584500F37C79 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73E7261E584500F37C79 /* Networking.swift */; };
+		581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73F6261E85AC00F37C79 /* ProductsServices.swift */; };
+		581B73FD261E865000F37C79 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B73FC261E865000F37C79 /* Product.swift */; };
+		581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7401261E8CD000F37C79 /* ProductResponse.swift */; };
+		583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EAE132620988A00E66C2A /* ProductServicesTests.swift */; };
+		58445190261FBDB10054380D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844518F261FBDB10054380D /* NetworkingTests.swift */; };
+		584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 584451A0261FC61E0054380D /* ProductQueryResponse.json */; };
+		586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEBB2620E5A2000C9F9F /* ProductResponse.json */; };
+		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
+		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
+		E0091C73A4C6097535AC4AFC /* libPods-meli assesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.release.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.release.xcconfig"; sourceTree = "<group>"; };
+		48552C71EC42D696FAFDF3D2 /* Pods-meli assesment-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4CAFA0EDA307B075F5AA66D5 /* Pods-meli assesment-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		581B7396261E42B600F37C79 /* meli assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meli assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		581B7399261E42B600F37C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		581B739B261E42B600F37C79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,26 @@
 		581B73B7261E42BA00F37C79 /* meli assesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meli assesmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		581B73BB261E42BA00F37C79 /* meli_assesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meli_assesmentUITests.swift; sourceTree = "<group>"; };
 		581B73BD261E42BA00F37C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581B73DF261E581B00F37C79 /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		581B73E0261E581B00F37C79 /* ProductListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListVC.xib; sourceTree = "<group>"; };
+		581B73E7261E584500F37C79 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		581B73F6261E85AC00F37C79 /* ProductsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServices.swift; sourceTree = "<group>"; };
+		581B73FC261E865000F37C79 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		581B7401261E8CD000F37C79 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		583EAE132620988A00E66C2A /* ProductServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServicesTests.swift; sourceTree = "<group>"; };
+		5844518F261FBDB10054380D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		584451A0261FC61E0054380D /* ProductQueryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductQueryResponse.json; sourceTree = "<group>"; };
+		586DDEBB2620E5A2000C9F9F /* ProductResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
+		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0091C73A4C6097535AC4AFC /* libPods-meli assesment.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2577E8ABE72C162BC2DF4F /* libPods-meli assesmentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +110,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C714DDCB79FF519086FB4A /* libPods-meli assesmentUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E553A40B63388018AB7C3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */,
+				3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */,
+				4CAFA0EDA307B075F5AA66D5 /* Pods-meli assesment-meli assesmentUITests.debug.xcconfig */,
+				48552C71EC42D696FAFDF3D2 /* Pods-meli assesment-meli assesmentUITests.release.xcconfig */,
+				E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */,
+				84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */,
+				DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */,
+				9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		581B738D261E42B600F37C79 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +139,8 @@
 				581B73AF261E42BA00F37C79 /* meli assesmentTests */,
 				581B73BA261E42BA00F37C79 /* meli assesmentUITests */,
 				581B7397261E42B600F37C79 /* Products */,
+				19E553A40B63388018AB7C3A /* Pods */,
+				7433342E850012A192D5A3D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +157,9 @@
 		581B7398261E42B600F37C79 /* meli assesment */ = {
 			isa = PBXGroup;
 			children = (
+				586E0CDD261F83DF000769CE /* Utils */,
+				581B73E6261E582900F37C79 /* Networking */,
+				581B73DE261E57AB00F37C79 /* ProductList */,
 				581B7399261E42B600F37C79 /* AppDelegate.swift */,
 				581B739B261E42B600F37C79 /* SceneDelegate.swift */,
 				581B739D261E42B600F37C79 /* ViewController.swift */,
@@ -106,6 +167,7 @@
 				581B73A2261E42BA00F37C79 /* Assets.xcassets */,
 				581B73A4261E42BA00F37C79 /* LaunchScreen.storyboard */,
 				581B73A7261E42BA00F37C79 /* Info.plist */,
+				586E0C6C261F516F000769CE /* GoogleService-Info.plist */,
 			);
 			path = "meli assesment";
 			sourceTree = "<group>";
@@ -113,6 +175,8 @@
 		581B73AF261E42BA00F37C79 /* meli assesmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				5844518E261FBD780054380D /* Networking */,
+				5844518C261FBD3D0054380D /* Utils */,
 				581B73B0261E42BA00F37C79 /* meli_assesmentTests.swift */,
 				581B73B2261E42BA00F37C79 /* Info.plist */,
 			);
@@ -128,6 +192,78 @@
 			path = "meli assesmentUITests";
 			sourceTree = "<group>";
 		};
+		581B73DE261E57AB00F37C79 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				581B73DF261E581B00F37C79 /* ProductListVC.swift */,
+				581B73E0261E581B00F37C79 /* ProductListVC.xib */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		581B73E6261E582900F37C79 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				581B73FB261E862B00F37C79 /* Models */,
+				581B73E7261E584500F37C79 /* Networking.swift */,
+				581B73F6261E85AC00F37C79 /* ProductsServices.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		581B73FB261E862B00F37C79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				581B73FC261E865000F37C79 /* Product.swift */,
+				581B7401261E8CD000F37C79 /* ProductResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5844518C261FBD3D0054380D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5844518E261FBD780054380D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5844519F261FC5DC0054380D /* MockRawData */,
+				5844518F261FBDB10054380D /* NetworkingTests.swift */,
+				583EAE132620988A00E66C2A /* ProductServicesTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5844519F261FC5DC0054380D /* MockRawData */ = {
+			isa = PBXGroup;
+			children = (
+				584451A0261FC61E0054380D /* ProductQueryResponse.json */,
+				586DDEBB2620E5A2000C9F9F /* ProductResponse.json */,
+			);
+			path = MockRawData;
+			sourceTree = "<group>";
+		};
+		586E0CDD261F83DF000769CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				586E0CDE261F840D000769CE /* LogUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7433342E850012A192D5A3D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */,
+				B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */,
+				B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581B73C0261E42BA00F37C79 /* Build configuration list for PBXNativeTarget "meli assesment" */;
 			buildPhases = (
+				FCDED0AA7CF0BE14F0277DB3 /* [CP] Check Pods Manifest.lock */,
 				581B7392261E42B600F37C79 /* Sources */,
 				581B7393261E42B600F37C79 /* Frameworks */,
 				581B7394261E42B600F37C79 /* Resources */,
+				586E0C82261F6114000769CE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581B73C3261E42BA00F37C79 /* Build configuration list for PBXNativeTarget "meli assesmentTests" */;
 			buildPhases = (
+				9A66DA016DBDAD2FE540D9ED /* [CP] Check Pods Manifest.lock */,
 				581B73A8261E42BA00F37C79 /* Sources */,
 				581B73A9261E42BA00F37C79 /* Frameworks */,
 				581B73AA261E42BA00F37C79 /* Resources */,
@@ -170,6 +309,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581B73C6261E42BA00F37C79 /* Build configuration list for PBXNativeTarget "meli assesmentUITests" */;
 			buildPhases = (
+				8C20AFA315244CD9D22BCB18 /* [CP] Check Pods Manifest.lock */,
 				581B73B3261E42BA00F37C79 /* Sources */,
 				581B73B4261E42BA00F37C79 /* Frameworks */,
 				581B73B5261E42BA00F37C79 /* Resources */,
@@ -231,7 +371,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */,
 				581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */,
+				586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */,
 				581B73A3261E42BA00F37C79 /* Assets.xcassets in Resources */,
 				581B73A1261E42B600F37C79 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +383,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */,
+				584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +397,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		586E0C82261F6114000769CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		8C20AFA315244CD9D22BCB18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli assesmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A66DA016DBDAD2FE540D9ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli assesmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDED0AA7CF0BE14F0277DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meli assesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		581B7392261E42B600F37C79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */,
+				581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */,
+				581B73E8261E584500F37C79 /* Networking.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
+				586E0CDF261F840D000769CE /* LogUtils.swift in Sources */,
+				581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,
 				581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */,
+				581B73FD261E865000F37C79 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +506,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */,
 				581B73B1261E42BA00F37C79 /* meli_assesmentTests.swift in Sources */,
+				58445190261FBDB10054380D /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +673,15 @@
 		};
 		581B73C1261E42BA00F37C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0FE409A312C9B444F44303A /* Pods-meli assesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = H9K52DH825;
 				INFOPLIST_FILE = "meli assesment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +695,14 @@
 		};
 		581B73C2261E42BA00F37C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9K52DH825;
 				INFOPLIST_FILE = "meli assesment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +716,7 @@
 		};
 		581B73C4261E42BA00F37C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +739,7 @@
 		};
 		581B73C5261E42BA00F37C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +762,7 @@
 		};
 		581B73C7261E42BA00F37C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +783,7 @@
 		};
 		581B73C8261E42BA00F37C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
