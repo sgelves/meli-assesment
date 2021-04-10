@@ -13,6 +13,8 @@ class ProductCellView: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var thumbnailView: UIImageView!
 
+    static let identifier = "productCell"
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
