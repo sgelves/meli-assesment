@@ -48,6 +48,7 @@ class ProductListVC: UIViewController, ProductListViewProtocol {
 extension ProductListVC: UITableViewDataSourcePrefetching {
 
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+
         let scrolledIndex = indexPaths.last?.row ?? 0
         let antepenultimateIndex = (self.presenter?.products.count ?? 0) - 3
         guard scrolledIndex >= antepenultimateIndex else {
