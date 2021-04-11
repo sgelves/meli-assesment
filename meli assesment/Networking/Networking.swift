@@ -50,21 +50,21 @@ class Networking {
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseDecodable(of: codable) { response in
-                
+
                 switch response.result {
-                
+
                 case .success:
                     if let decoded = response.value {
-                        
+
                         completion(.success(decoded))
                     } else {
-                        
+
                         completion(.failure(.alamofireError))
                         LogUtils.error(ApiError.alamofireError, withData: response.value)
                     }
-                    
+
                 case .failure:
-                    
+
                     var error: ApiError
                     let statusCode = response.response?.statusCode ?? 0
 
@@ -90,4 +90,3 @@ class Networking {
             }
     }
 }
-
