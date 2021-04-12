@@ -9,6 +9,9 @@ protocol ProductsServiceProtocol {
 
     static func getSingleProducts(byId id: String, completion: @escaping(Result<Product, ApiError>) -> Void)
 
+    static func getProductDescription(byId id: String,
+                                      completion: @escaping(Result<ProductDescription, ApiError>) -> Void)
+
     static func getProductsList(byQuery query: String,
                                 limit: Int,
                                 andOffset offset: Int,
@@ -18,8 +21,9 @@ protocol ProductsServiceProtocol {
 class ProductsServices: ProductsServiceProtocol {
 
     enum Paths: String {
-        case productsList = "/sites/MLB/search"
         case singleProduct = "/items/%@"
+        case productDescription = "/items/%@/description?api_version=2"
+        case productsList = "/sites/MCO/search"
     }
 
     static func getSingleProducts(byId id: String, completion: @escaping(Result<Product, ApiError>) -> Void) {
@@ -30,6 +34,17 @@ class ProductsServices: ProductsServiceProtocol {
 
         Networking(path: String(format: Paths.singleProduct.rawValue, id) , method: .get)
             .execute(withCodable: Product.self) { (result) in completion(result) }
+    }
+
+    static func getProductDescription(byId id: String,
+                                     completion: @escaping(Result<ProductDescription, ApiError>) -> Void) {
+        guard !id.isEmpty else {
+            completion(.failure(.invalidParameters))
+            return
+        }
+
+        Networking(path: String(format: Paths.productDescription.rawValue, id) , method: .get)
+            .execute(withCodable: ProductDescription.self) { (result) in completion(result) }
     }
 
     static func getProductsList(byQuery query: String,

@@ -80,19 +80,19 @@ class ProductListPresenter: ProductListPresProtocol {
                 if !list.isEmpty {
                     self?.products.append(contentsOf: list)
                     self?.view?.reloadView(state: .withData)
-                } else if currenctProductsCount > 0 {
-                    self?.view?.reloadView(state: .noMoreData)
                 } else if currenctProductsCount == 0 {
                     self?.view?.reloadView(state: .noData)
+                } else {
+                    self?.view?.reloadView(state: .noMoreData)
                 }
 
             case let .failure(error):
 
                 LogUtils.error(error) // DO something, log should not be here
                 if currenctProductsCount > 0 {
+                    self?.view?.reloadView(state: .noMoreData)
+                } else {
                     self?.view?.reloadView(state: .noData)
-                } else if currenctProductsCount == 0 {
-                    self?.view?.reloadView(state: .empty)
                 }
 
             }

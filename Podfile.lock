@@ -1,7 +1,5 @@
 PODS:
   - Alamofire (5.4.2)
-  - AlamofireImage (4.2.0):
-    - Alamofire (~> 5.4)
   - Firebase/Analytics (7.10.0):
     - Firebase/Core
   - Firebase/Core (7.10.0):
@@ -70,6 +68,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.3.1):
     - GoogleUtilities/Logger
+  - Kingfisher (6.2.1)
   - Mocker (2.2.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -81,16 +80,15 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
-  - AlamofireImage (~> 4.1)
   - Firebase/Analytics
   - Firebase/Crashlytics
+  - Kingfisher (~> 6.2.1)
   - Mocker (~> 2.2.0)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - AlamofireImage
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -100,6 +98,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - Kingfisher
     - Mocker
     - nanopb
     - PromisesObjC
@@ -107,7 +106,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
-  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Firebase: fffddd0bab8677d07376538365faa93ff3889b39
   FirebaseAnalytics: 4641d7ae4220174f6ca5626163ffc5de2e90391e
   FirebaseCore: ec566d917b2195fc2610aeb148dae99f57a788f9
@@ -117,11 +115,12 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 1c863b1161fc3c8cf614a7460d1be6a7c262aab3
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   Mocker: d0ceb340eddd5c28539a691ce67d068674cef9a0
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: d916f51c770d0400489cf2046137654d282eb5ea
+PODFILE CHECKSUM: f538b1e8d9367f1e6f18a40c244d9cb5bb34657e
 
 COCOAPODS: 1.10.0

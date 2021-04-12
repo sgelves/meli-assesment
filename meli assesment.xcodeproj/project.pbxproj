@@ -35,6 +35,14 @@
 		586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEC3262109ED000C9F9F /* ProductCellView.xib */; };
 		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
 		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
+		58D9710326248C5E00093B97 /* PricesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9710226248C5E00093B97 /* PricesList.swift */; };
+		58D9710826248CCA00093B97 /* SinglePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9710726248CCA00093B97 /* SinglePrice.swift */; };
+		58D971182624967D00093B97 /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D971172624967D00093B97 /* ProductPresenter.swift */; };
+		58D9712026249ADF00093B97 /* PriceFormaterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9711F26249ADF00093B97 /* PriceFormaterUtils.swift */; };
+		58D971252624A1EF00093B97 /* ProductPriceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D971242624A1EF00093B97 /* ProductPriceType.swift */; };
+		58D9712A2624A8AD00093B97 /* ShippingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D971292624A8AD00093B97 /* ShippingMethod.swift */; };
+		58D9712F2624AE2400093B97 /* ProductDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9712E2624AE2400093B97 /* ProductDescription.swift */; };
+		58D971822624B9D200093B97 /* ProductDescriptionResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 58D971762624B9CA00093B97 /* ProductDescriptionResponse.json */; };
 		58EFEB6F26225C97003D4629 /* ProductListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFEB6E26225C97003D4629 /* ProductListPresenterTests.swift */; };
 		58EFEB7E26227694003D4629 /* ProductsServicesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFEB7D26227694003D4629 /* ProductsServicesMock.swift */; };
 		58EFEB86262276BA003D4629 /* ProductListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFEB85262276BA003D4629 /* ProductListViewMock.swift */; };
@@ -94,6 +102,14 @@
 		586DDEC3262109ED000C9F9F /* ProductCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
 		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		58D9710226248C5E00093B97 /* PricesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesList.swift; sourceTree = "<group>"; };
+		58D9710726248CCA00093B97 /* SinglePrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePrice.swift; sourceTree = "<group>"; };
+		58D971172624967D00093B97 /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
+		58D9711F26249ADF00093B97 /* PriceFormaterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormaterUtils.swift; sourceTree = "<group>"; };
+		58D971242624A1EF00093B97 /* ProductPriceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPriceType.swift; sourceTree = "<group>"; };
+		58D971292624A8AD00093B97 /* ShippingMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingMethod.swift; sourceTree = "<group>"; };
+		58D9712E2624AE2400093B97 /* ProductDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescription.swift; sourceTree = "<group>"; };
+		58D971762624B9CA00093B97 /* ProductDescriptionResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductDescriptionResponse.json; sourceTree = "<group>"; };
 		58EFEB6E26225C97003D4629 /* ProductListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterTests.swift; sourceTree = "<group>"; };
 		58EFEB7D26227694003D4629 /* ProductsServicesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServicesMock.swift; sourceTree = "<group>"; };
 		58EFEB85262276BA003D4629 /* ProductListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewMock.swift; sourceTree = "<group>"; };
@@ -244,6 +260,11 @@
 			children = (
 				581B73FC261E865000F37C79 /* Product.swift */,
 				581B7401261E8CD000F37C79 /* ProductResponse.swift */,
+				58D9710226248C5E00093B97 /* PricesList.swift */,
+				58D9710726248CCA00093B97 /* SinglePrice.swift */,
+				58D971242624A1EF00093B97 /* ProductPriceType.swift */,
+				58D971292624A8AD00093B97 /* ShippingMethod.swift */,
+				58D9712E2624AE2400093B97 /* ProductDescription.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -296,6 +317,7 @@
 			children = (
 				584451A0261FC61E0054380D /* ProductQueryResponse.json */,
 				586DDEBB2620E5A2000C9F9F /* ProductResponse.json */,
+				58D971762624B9CA00093B97 /* ProductDescriptionResponse.json */,
 			);
 			path = MockRawData;
 			sourceTree = "<group>";
@@ -329,6 +351,7 @@
 		584587B72623E1050084E6CE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				58D971172624967D00093B97 /* ProductPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -339,6 +362,7 @@
 				58080656262357AD00CF3455 /* SearchController.swift */,
 				586E0CDE261F840D000769CE /* LogUtils.swift */,
 				581C8E4026225261004D6968 /* ListViewStateType.swift */,
+				58D9711F26249ADF00093B97 /* PriceFormaterUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -502,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */,
+				58D971822624B9D200093B97 /* ProductDescriptionResponse.json in Resources */,
 				584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +576,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+			shellScript = "if which \"${PODS_ROOT}/FirebaseCrashlytics/run\" >/dev/null; then\n  \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		8C20AFA315244CD9D22BCB18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -628,15 +653,22 @@
 			files = (
 				581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */,
 				581B73E1261E581B00F37C79 /* ProductListVC.swift in Sources */,
+				58D9710326248C5E00093B97 /* PricesList.swift in Sources */,
 				581B73E8261E584500F37C79 /* Networking.swift in Sources */,
+				58D971252624A1EF00093B97 /* ProductPriceType.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
+				58D9712A2624A8AD00093B97 /* ShippingMethod.swift in Sources */,
+				58D9712026249ADF00093B97 /* PriceFormaterUtils.swift in Sources */,
+				58D9712F2624AE2400093B97 /* ProductDescription.swift in Sources */,
 				586DDEC4262109ED000C9F9F /* ProductCellView.swift in Sources */,
 				586E0CDF261F840D000769CE /* LogUtils.swift in Sources */,
 				581C8E3C26223521004D6968 /* ProductListPresenter.swift in Sources */,
 				581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */,
+				58D9710826248CCA00093B97 /* SinglePrice.swift in Sources */,
 				584587BA2623E1550084E6CE /* ProductVC.swift in Sources */,
 				58080657262357AD00CF3455 /* SearchController.swift in Sources */,
 				581C8E4126225261004D6968 /* ListViewStateType.swift in Sources */,
+				58D971182624967D00093B97 /* ProductPresenter.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,
 				581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */,
 				581B73FD261E865000F37C79 /* Product.swift in Sources */,

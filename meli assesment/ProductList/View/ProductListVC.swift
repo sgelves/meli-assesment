@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol ProductListViewProtocol: AnyObject {
 
@@ -55,11 +56,8 @@ class ProductListVC: UIViewController {
 
     func presentProduct (product: Product) {
 
-        let viewController = ProductVC()
-        self.navigationController?.present(viewController, animated: true, completion: {
-            viewController.titleLabel.text = product.title
-            viewController.priceLabel.text = "\(product.price)"
-        })
+        let viewController = ProductVC(with: product)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
@@ -74,7 +72,7 @@ extension ProductListVC: ProductListViewProtocol {
             self.view.bringSubviewToFront(tableView)
             self.tableView.reloadData()
         case .noMoreData:
-            break
+            self.view.bringSubviewToFront(tableView)
         case .noData:
             self.view.bringSubviewToFront(noResultView)
         default:
@@ -122,7 +120,11 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
            , let model = self.presenter?.products[indexPath.row] {
             cell.titleLabel.text = model.title
             cell.priceLabel.text = "\(model.price)"
+
+            let url = URL(string: model.thumbnail)
+            cell.thumbnailView?.kf.setImage(with: url)
         }
+
         return cell
     }
 

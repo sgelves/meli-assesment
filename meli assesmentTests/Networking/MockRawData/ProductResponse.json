@@ -19,7 +19,13 @@
     "accepts_mercadopago": true,
     "installments": {},
     "address": {},
-    "shipping": {},
+    "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+    },
     "seller_address": {},
     "attributes": [],
     "differential_pricing": {},
