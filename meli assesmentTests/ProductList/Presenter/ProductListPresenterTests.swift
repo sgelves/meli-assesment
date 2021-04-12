@@ -32,12 +32,15 @@ class ProductListPresenterTests: XCTestCase {
 
         // THEN
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+
             if let state = view.currentState {
+
                 XCTAssertEqual(presenter.products.count, products.count + responseTotal)
                 XCTAssertEqual(state, .withData)
                 XCTAssertEqual(view.reloadViewCalled, true)
                 expc.fulfill()
             } else {
+                
                 XCTFail("Data is not being updates")
             }
         }
@@ -128,7 +131,7 @@ class ProductListPresenterTests: XCTestCase {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             if let state = view.currentState {
                 XCTAssertEqual(presenter.products.count, 0)
-                XCTAssertEqual(state, .empty)
+                XCTAssertEqual(state, .noData)
                 expc.fulfill()
             } else {
                 XCTFail("Data is not empty")
@@ -154,7 +157,7 @@ class ProductListPresenterTests: XCTestCase {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             if let state = view.currentState {
                 XCTAssertEqual(presenter.products.count, products.count)
-                XCTAssertEqual(state, .noData)
+                XCTAssertEqual(state, .noMoreData)
                 expc.fulfill()
             } else {
                 XCTFail("Data has been changed")

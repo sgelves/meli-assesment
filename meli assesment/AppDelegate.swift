@@ -22,8 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
 
+            let nav = UINavigationController()
+
             let viewController = ProductListVC()
-            window?.rootViewController = viewController
+
+            nav.viewControllers = [viewController]
+
+            window?.rootViewController = nav
             window?.makeKeyAndVisible()
         }
 

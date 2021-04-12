@@ -19,8 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: windowScene)
 
+        let nav = UINavigationController()
+
         let viewController = ProductListVC()
-        window?.rootViewController = viewController
+
+        nav.viewControllers = [viewController]
+
+        window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
 
