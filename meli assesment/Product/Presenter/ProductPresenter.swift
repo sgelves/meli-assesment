@@ -13,6 +13,7 @@ protocol ProductPresenterProtocol {
     var product: Product { get }
 
     var service: ProductsServiceProtocol.Type { get }
+    var formatter: PriceFormatterProtocol.Type { get }
 
     var id: String { get }
     var title: String { get }
@@ -32,13 +33,19 @@ class ProductPresenter: ProductPresenterProtocol {
     var product: Product
 
     var service: ProductsServiceProtocol.Type
+    var formatter: PriceFormatterProtocol.Type
 
     private var productDescription: String?
+    static let segmentedMonths: Int = 36
 
-    init(view: ProductViewProtocol, data: Product, service: ProductsServiceProtocol.Type = ProductsServices.self) {
+    init(view: ProductViewProtocol,
+         data: Product,
+         service: ProductsServiceProtocol.Type = ProductsServices.self,
+         formatter: PriceFormatterProtocol.Type = PriceFormaterUtils.self) {
         self.view = view
         self.product = data
         self.service = service
+        self.formatter = formatter
     }
 
     var id: String {
@@ -50,7 +57,7 @@ class ProductPresenter: ProductPresenterProtocol {
     }
 
     var price: String? {
-        return PriceFormaterUtils.formatPrice(fromFloat: product.price)
+        return formatter.formatPrice(fromFloat: product.price)
     }
 
     var imageUrl: URL? {
@@ -62,7 +69,7 @@ class ProductPresenter: ProductPresenterProtocol {
             price.type != ProductPriceType.standard.rawValue
         }), let regularPrice = price.regularAmount {
 
-            let discountPerc = PriceFormaterUtils.getDiscountFrom(originialPrice: regularPrice,
+            let discountPerc = formatter.getDiscountFrom(originialPrice: regularPrice,
                                                                   andWithDiscount: price.amount)
 
             return Localized.discountPrice.toLocalized(andArg: discountPerc)
@@ -72,7 +79,8 @@ class ProductPresenter: ProductPresenterProtocol {
     }
 
     var segmentedPayments: String? {
-        if let priceString = PriceFormaterUtils.getSegmentedPayment(for: product.price, intoMonths: 36) {
+        if let priceString = formatter.getSegmentedPayment(for: product.price,
+                                                           intoMonths: ProductPresenter.segmentedMonths) {
             return Localized.segmentedPrice.toLocalized(andArg: priceString)
         }
         return nil

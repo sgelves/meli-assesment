@@ -53,12 +53,6 @@ class ProductListVC: UIViewController {
 
         self.reloadView(state: .empty)
     }
-
-    func presentProduct (product: Product) {
-
-        let viewController = ProductVC(with: product)
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
 }
 
 extension ProductListVC: ProductListViewProtocol {
@@ -130,7 +124,9 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row < self.presenter?.products.count ?? 0
            , let model = self.presenter?.products[indexPath.row] {
-            presentProduct(product: model)
+
+            let viewController = ProductVC(with: model)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }

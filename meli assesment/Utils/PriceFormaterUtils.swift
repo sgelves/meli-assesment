@@ -7,7 +7,13 @@
 
 import Foundation
 
-class PriceFormaterUtils {
+protocol PriceFormatterProtocol {
+    static func getDiscountFrom(originialPrice original: Float, andWithDiscount discount: Float) -> String
+    static func getSegmentedPayment(for price: Float, intoMonths months: Int) -> String?
+    static func formatPrice(fromFloat price: Float) -> String?
+}
+
+class PriceFormaterUtils: PriceFormatterProtocol {
 
     static var localeId =  "es_CO"
 
