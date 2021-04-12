@@ -9,5 +9,6 @@ enum ListViewState {
     case empty
     case loading
     case withData
+    case noMoreData
     case noData
 }

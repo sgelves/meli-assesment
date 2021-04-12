@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B2577E8ABE72C162BC2DF4F /* libPods-meli assesmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */; };
 		35C714DDCB79FF519086FB4A /* libPods-meli assesmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */; };
+		58080657262357AD00CF3455 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58080656262357AD00CF3455 /* SearchController.swift */; };
 		581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7399261E42B600F37C79 /* AppDelegate.swift */; };
 		581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B739B261E42B600F37C79 /* SceneDelegate.swift */; };
 		581B739E261E42B600F37C79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B739D261E42B600F37C79 /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 		583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EAE132620988A00E66C2A /* ProductServicesTests.swift */; };
 		58445190261FBDB10054380D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844518F261FBDB10054380D /* NetworkingTests.swift */; };
 		584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 584451A0261FC61E0054380D /* ProductQueryResponse.json */; };
+		584587BA2623E1550084E6CE /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584587B82623E1550084E6CE /* ProductVC.swift */; };
+		584587BB2623E1550084E6CE /* ProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584587B92623E1550084E6CE /* ProductVC.xib */; };
 		586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEBB2620E5A2000C9F9F /* ProductResponse.json */; };
 		586DDEC4262109ED000C9F9F /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DDEC2262109ED000C9F9F /* ProductCellView.swift */; };
 		586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEC3262109ED000C9F9F /* ProductCellView.xib */; };
@@ -59,6 +62,7 @@
 		3B5BF9C967F56DB4AFA8C777 /* Pods-meli assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.release.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.release.xcconfig"; sourceTree = "<group>"; };
 		48552C71EC42D696FAFDF3D2 /* Pods-meli assesment-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4CAFA0EDA307B075F5AA66D5 /* Pods-meli assesment-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58080656262357AD00CF3455 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		581B7396261E42B600F37C79 /* meli assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meli assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		581B7399261E42B600F37C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		581B739B261E42B600F37C79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		583EAE132620988A00E66C2A /* ProductServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServicesTests.swift; sourceTree = "<group>"; };
 		5844518F261FBDB10054380D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		584451A0261FC61E0054380D /* ProductQueryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductQueryResponse.json; sourceTree = "<group>"; };
+		584587B82623E1550084E6CE /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		584587B92623E1550084E6CE /* ProductVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductVC.xib; sourceTree = "<group>"; };
 		586DDEBB2620E5A2000C9F9F /* ProductResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
 		586DDEC2262109ED000C9F9F /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		586DDEC3262109ED000C9F9F /* ProductCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
@@ -144,6 +150,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		580806552623578E00CF3455 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		581B738D261E42B600F37C79 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +182,8 @@
 		581B7398261E42B600F37C79 /* meli assesment */ = {
 			isa = PBXGroup;
 			children = (
+				584587B42623E0F00084E6CE /* Product */,
+				580806552623578E00CF3455 /* NavigationController */,
 				586E0CDD261F83DF000769CE /* Utils */,
 				581B73E6261E582900F37C79 /* Networking */,
 				581B73DE261E57AB00F37C79 /* ProductList */,
@@ -285,9 +300,43 @@
 			path = MockRawData;
 			sourceTree = "<group>";
 		};
+		584587B42623E0F00084E6CE /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				584587B62623E1000084E6CE /* Model */,
+				584587B52623E0F70084E6CE /* View */,
+				584587B72623E1050084E6CE /* Presenter */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		584587B52623E0F70084E6CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				584587B82623E1550084E6CE /* ProductVC.swift */,
+				584587B92623E1550084E6CE /* ProductVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		584587B62623E1000084E6CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		584587B72623E1050084E6CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		586E0CDD261F83DF000769CE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				58080656262357AD00CF3455 /* SearchController.swift */,
 				586E0CDE261F840D000769CE /* LogUtils.swift */,
 				581C8E4026225261004D6968 /* ListViewStateType.swift */,
 			);
@@ -438,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584587BB2623E1550084E6CE /* ProductVC.xib in Resources */,
 				581B73E2261E581B00F37C79 /* ProductListVC.xib in Resources */,
 				581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */,
 				586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */,
@@ -584,6 +634,8 @@
 				586E0CDF261F840D000769CE /* LogUtils.swift in Sources */,
 				581C8E3C26223521004D6968 /* ProductListPresenter.swift in Sources */,
 				581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */,
+				584587BA2623E1550084E6CE /* ProductVC.swift in Sources */,
+				58080657262357AD00CF3455 /* SearchController.swift in Sources */,
 				581C8E4126225261004D6968 /* ListViewStateType.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,
 				581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */,

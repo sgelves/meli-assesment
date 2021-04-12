@@ -11,16 +11,23 @@ protocol ProductListViewProtocol: AnyObject {
 
     var presenter: ProductListPresProtocol? { get }
 
+    var listSate: ListViewState { get }
+
     func reloadView(state: ListViewState)
 }
 
-class ProductListVC: UIViewController, ProductListViewProtocol {
+class ProductListVC: UIViewController {
 
     var presenter: ProductListPresProtocol?
 
     var listSate: ListViewState = .empty
 
+    lazy var searchController: SearchControllerProtocol = SearchController(searchResultsController: nil)
+
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var noResultView: UIView!
+    @IBOutlet weak var activityIndicator: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +43,43 @@ class ProductListVC: UIViewController, ProductListViewProtocol {
         self.tableView.register(UINib(nibName: "ProductCellView", bundle: Bundle.main),
                                 forCellReuseIdentifier: ProductCellView.identifier)
 
-        self.presenter?.setQuery("Motorola")
-        self.presenter?.searchProducts()
+        self.searchController.resultDelegate = self
+
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.navigationItem.titleView = searchController.searchBar
+
+        self.definesPresentationContext = true
+
+        self.reloadView(state: .empty)
     }
+}
+
+extension ProductListVC: ProductListViewProtocol {
 
     func reloadView(state: ListViewState) {
-        self.tableView.reloadData()
+
+        switch state {
+        case .loading:
+            self.view.bringSubviewToFront(activityIndicator)
+        case .withData:
+            self.view.bringSubviewToFront(tableView)
+            self.tableView.reloadData()
+        case .noMoreData:
+            break
+        case .noData:
+            self.view.bringSubviewToFront(noResultView)
+        default:
+            self.view.bringSubviewToFront(emptyView)
+        }
+    }
+}
+
+extension ProductListVC: SearchResultDelegateProtocol {
+
+    func souldUpdateResult(withSearchValue searchValue: String) {
+
+        presenter?.setQuery(searchValue)
+        presenter?.searchProducts()
     }
 }
 
@@ -71,7 +109,8 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
             .dequeueReusableCell(withIdentifier: ProductCellView.identifier, for: indexPath) as? ProductCellView
             ?? ProductCellView()
 
-        if let model = self.presenter?.products[indexPath.row] {
+        if indexPath.row < self.presenter?.products.count ?? 0
+           , let model = self.presenter?.products[indexPath.row] {
             cell.titleLabel.text = model.title
             cell.priceLabel.text = "\(model.price)"
         }

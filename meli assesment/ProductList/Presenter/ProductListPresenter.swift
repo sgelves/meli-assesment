@@ -50,12 +50,19 @@ class ProductListPresenter: ProductListPresProtocol {
 
     func searchProducts() {
 
-        guard !isLoading && !self.query.isEmpty else {
-            LogUtils.debug(withMessage: "QueryProductList is still loading or query is empty")
+        guard !isLoading else {
+            LogUtils.debug(withMessage: "QueryProductList is still loading")
+            return
+        }
+
+        guard !self.query.isEmpty else {
+            view?.reloadView(state: .empty)
             return
         }
 
         isLoading = true
+
+        view?.reloadView(state: .loading)
 
         service.getProductsList(byQuery: self.query,
                                          limit: limit,
@@ -74,9 +81,9 @@ class ProductListPresenter: ProductListPresProtocol {
                     self?.products.append(contentsOf: list)
                     self?.view?.reloadView(state: .withData)
                 } else if currenctProductsCount > 0 {
-                    self?.view?.reloadView(state: .noData)
+                    self?.view?.reloadView(state: .noMoreData)
                 } else if currenctProductsCount == 0 {
-                    self?.view?.reloadView(state: .empty)
+                    self?.view?.reloadView(state: .noData)
                 }
 
             case let .failure(error):
