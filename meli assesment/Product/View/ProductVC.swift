@@ -19,6 +19,7 @@ class ProductVC: UIViewController, ProductViewProtocol {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var discountLabel: UILabel!
+    @IBOutlet weak var shippingLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
 
     var presenter: ProductPresenterProtocol?
@@ -38,6 +39,7 @@ class ProductVC: UIViewController, ProductViewProtocol {
         self.titleLabel.text = presenter?.title
         self.priceLabel.text = presenter?.price
         self.discountLabel.text = presenter?.discount
+        self.shippingLabel.text = presenter?.freeShipping
         presenter?.getProductDescription(completion: { [weak self] description in
             self?.descriptionLabel.text = description
         })

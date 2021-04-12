@@ -15,6 +15,7 @@
                 <outlet property="discountLabel" destination="PpJ-M3-UCV" id="KeB-xz-4hd"/>
                 <outlet property="imageView" destination="Fg5-n0-UUP" id="mK7-2q-Ovo"/>
                 <outlet property="priceLabel" destination="hB3-9F-wUu" id="QED-Am-Gkb"/>
+                <outlet property="shippingLabel" destination="ni3-Q0-NE7" id="Wwy-Ln-ipV"/>
                 <outlet property="titleLabel" destination="8jz-Oa-Id0" id="Q82-eJ-ROm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -67,16 +68,7 @@
                                     <color key="textColor" name="MainHighlightColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCp-YJ-hdW" userLabel="Description">
-                                    <rect key="frame" x="20" y="339" width="374" height="20"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Tq4-yW-Pk5"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <color key="textColor" name="SecondaryColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni3-Q0-NE7">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni3-Q0-NE7" userLabel="Free Shipping">
                                     <rect key="frame" x="20" y="309" width="75" height="0.0"/>
                                     <color key="backgroundColor" name="SecondaryHighlightColor"/>
                                     <constraints>
@@ -84,6 +76,15 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCp-YJ-hdW" userLabel="Description">
+                                    <rect key="frame" x="20" y="339" width="374" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Tq4-yW-Pk5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="SecondaryColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
