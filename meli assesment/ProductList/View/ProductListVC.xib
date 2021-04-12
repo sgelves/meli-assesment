@@ -26,7 +26,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ot-Ub-1pM" userLabel="Activity Indicator">
                     <rect key="frame" x="157" y="383" width="100" height="100"/>
                     <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-sm-nGe">
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-sm-nGe">
                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                         </activityIndicatorView>
                     </subviews>

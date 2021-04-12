@@ -52,6 +52,15 @@ class ProductListVC: UIViewController {
 
         self.reloadView(state: .empty)
     }
+
+    func presentProduct (product: Product) {
+
+        let viewController = ProductVC()
+        self.navigationController?.present(viewController, animated: true, completion: {
+            viewController.titleLabel.text = product.title
+            viewController.priceLabel.text = "\(product.price)"
+        })
+    }
 }
 
 extension ProductListVC: ProductListViewProtocol {
@@ -115,5 +124,12 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
             cell.priceLabel.text = "\(model.price)"
         }
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row < self.presenter?.products.count ?? 0
+           , let model = self.presenter?.products[indexPath.row] {
+            presentProduct(product: model)
+        }
     }
 }
