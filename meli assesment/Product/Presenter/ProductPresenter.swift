@@ -62,8 +62,10 @@ class ProductPresenter: ProductPresenterProtocol {
             price.type != ProductPriceType.standard.rawValue
         }), let regularPrice = price.regularAmount {
 
-            return PriceFormaterUtils.getDiscountFrom(originialPrice: regularPrice,
-                                                      andWithDiscount: price.amount)
+            let discountPerc = PriceFormaterUtils.getDiscountFrom(originialPrice: regularPrice,
+                                                                  andWithDiscount: price.amount)
+
+            return Localized.discountPrice.toLocalized(andArg: discountPerc)
         }
 
         return nil
@@ -71,14 +73,14 @@ class ProductPresenter: ProductPresenterProtocol {
 
     var segmentedPayments: String? {
         if let priceString = PriceFormaterUtils.getSegmentedPayment(for: product.price, intoMonths: 36) {
-            return "en \(priceString)"
+            return Localized.segmentedPrice.toLocalized(andArg: priceString)
         }
         return nil
     }
 
     var freeShipping: String? {
         if product.shipping.freeShipping {
-            return "Envío gratis"
+            return  Localized.freeShipping.toLocalized()
         }
         return nil
     }
