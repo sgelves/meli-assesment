@@ -32,8 +32,11 @@ class PriceFormaterUtils {
         return "\(percentage)%"
     }
 
-    static func getSegmentedPayment(for price: Float, intoMonths months: Int) -> String {
-        let segmentedPrice = round(price * 100) / 100.0
-        return "\(months)x \(segmentedPrice)"
+    static func getSegmentedPayment(for price: Float, intoMonths months: Int) -> String? {
+        let segmentedPrice = round((price/Float(months)) * 100) / 100.0
+        if let formattedPrice = formatPrice(fromFloat: segmentedPrice) {
+            return "\(months)x \(formattedPrice)"
+        }
+        return nil
     }
 }

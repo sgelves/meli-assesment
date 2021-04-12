@@ -23,9 +23,9 @@ class ProductVC: UIViewController, ProductViewProtocol {
 
     var presenter: ProductPresenterProtocol?
 
-    init(with data: Product) {
+    init(with data: Product, presenter: ProductPresenterProtocol? = nil) {
         super.init(nibName: nil, bundle: nil)
-        self.presenter = ProductPresenter(view: self, data: data)
+        self.presenter = presenter ?? ProductPresenter(view: self, data: data)
     }
 
     public required init?(coder aDecoder: NSCoder) {

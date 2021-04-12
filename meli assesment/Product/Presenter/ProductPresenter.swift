@@ -16,10 +16,10 @@ protocol ProductPresenterProtocol {
 
     var id: String { get }
     var title: String { get }
-    var price: String { get }
+    var price: String? { get }
     var imageUrl: URL? { get }
     var discount: String? { get }
-    var segmentedPayments: String { get }
+    var segmentedPayments: String? { get }
     var freeShipping: String? { get }
 
     func getProductDescription(completion: @escaping(String) -> Void)
@@ -49,10 +49,9 @@ class ProductPresenter: ProductPresenterProtocol {
         return product.title
     }
 
-    var price: String {
-        return PriceFormaterUtils.formatPrice(fromFloat: product.price) ?? ""
+    var price: String? {
+        return PriceFormaterUtils.formatPrice(fromFloat: product.price)
     }
-
 
     var imageUrl: URL? {
         return URL(string: product.thumbnail)
@@ -70,8 +69,11 @@ class ProductPresenter: ProductPresenterProtocol {
         return nil
     }
 
-    var segmentedPayments: String {
-        "en \(PriceFormaterUtils.getSegmentedPayment(for: product.price, intoMonths: 36))"
+    var segmentedPayments: String? {
+        if let priceString = PriceFormaterUtils.getSegmentedPayment(for: product.price, intoMonths: 36) {
+            return "en \(priceString)"
+        }
+        return nil
     }
 
     var freeShipping: String? {

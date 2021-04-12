@@ -37,7 +37,7 @@ class ProductsServices: ProductsServiceProtocol {
     }
 
     static func getProductDescription(byId id: String,
-                                     completion: @escaping(Result<ProductDescription, ApiError>) -> Void) {
+                                      completion: @escaping(Result<ProductDescription, ApiError>) -> Void) {
         guard !id.isEmpty else {
             completion(.failure(.invalidParameters))
             return

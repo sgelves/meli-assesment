@@ -118,11 +118,10 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
 
         if indexPath.row < self.presenter?.products.count ?? 0
            , let model = self.presenter?.products[indexPath.row] {
-            cell.titleLabel.text = model.title
-            cell.priceLabel.text = "\(model.price)"
 
-            let url = URL(string: model.thumbnail)
-            cell.thumbnailView?.kf.setImage(with: url)
+            let pres = ProductPresenter(view: cell, data: model)
+            cell.presenter = pres
+            cell.setUp()
         }
 
         return cell
