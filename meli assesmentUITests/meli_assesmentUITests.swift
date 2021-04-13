@@ -22,21 +22,67 @@ class MeliAssesmentUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testProductListPresented() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        app.navigationBars["meli_assesment.ProductListVC"].searchFields["Buscar"].tap()
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+        let mKey = app/*@START_MENU_TOKEN@*/.keys["M"]/*[[".keyboards.keys[\"M\"]",".keys[\"M\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        mKey.tap()
+
+        let aKey = app/*@START_MENU_TOKEN@*/.keys["a"]/*[[".keyboards.keys[\"a\"]",".keys[\"a\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        aKey.tap()
+
+        let qKey = app/*@START_MENU_TOKEN@*/.keys["q"]/*[[".keyboards.keys[\"q\"]",".keys[\"q\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        qKey.tap()
+
+        let app2 = app
+        app2/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards",".buttons[\"buscar\"]",".buttons[\"Search\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+        XCTAssertTrue(app.tables.cells.otherElements.containing(
+                        .image,
+                        identifier:"Imagen del producto en la celda MCO608744399").element.exists)
+
+        app.tables.cells.otherElements.containing(
+            .image,
+            identifier:"Imagen del producto en la celda MCO608744399").element.tap()
+
+        let scrollViewsQuery = app.scrollViews
+
+        XCTAssertTrue(scrollViewsQuery.otherElements.containing(
+                        .staticText,
+                        identifier:"Título del detalle del producto").children(matching: .other).element.exists)
+        scrollViewsQuery.otherElements.containing(
+            .staticText,
+            identifier:"Título del detalle del producto").children(matching: .other).element.tap()
+        
+        let atrSButton = app.navigationBars["meli_assesment.ProductVC"].buttons["Atrás"]
+        atrSButton.tap()
+
+        let tablesQuery = app2.tables
+        XCTAssertTrue(tablesQuery.cells.staticTexts["Envío del producto en la celda MCO552813380"].exists)
+        tablesQuery.cells.staticTexts["Envío del producto en la celda MCO552813380"].tap()
+
+        let elementsQuery = scrollViewsQuery.otherElements
+        XCTAssertTrue(elementsQuery.staticTexts["Envío del detalle del producto"].exists)
+        elementsQuery.staticTexts["Envío del detalle del producto"].tap()
+
+        atrSButton.tap()
+
+        XCTAssertTrue(tablesQuery.staticTexts["Título del producto en la celda MCO552813380"].exists)
+        tablesQuery.staticTexts["Título del producto en la celda MCO552813380"].tap()
+
+        XCTAssertTrue(elementsQuery.staticTexts["Título del detalle del producto"].exists)
+        elementsQuery.staticTexts["Título del detalle del producto"].tap()
+
+        atrSButton.tap()
+
+        XCTAssertTrue(tablesQuery.staticTexts["Precio del producto en la celda MCO607778497"].exists)
+        tablesQuery.staticTexts["Precio del producto en la celda MCO607778497"].tap()
+
+        XCTAssertTrue(elementsQuery.staticTexts["Precio del detalle del producto"].exists)
+        elementsQuery.staticTexts["Precio del detalle del producto"].tap()
     }
 }
