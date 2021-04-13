@@ -27,6 +27,16 @@ class ProductCellView: UITableViewCell, ProductViewProtocol {
         self.thumbnailView.kf.setImage(with: presenter?.imageUrl)
         self.segmentedLabel.text = presenter?.segmentedPayments
         self.shippingLabel.text = presenter?.freeShipping
+
+        setAccesibilityIds(id: presenter?.id ?? "")
+    }
+
+    private func setAccesibilityIds (id: String) {
+        self.titleLabel.accessibilityIdentifier = AccesibilityIds.ProductCell.title + id
+        self.priceLabel.accessibilityIdentifier = AccesibilityIds.ProductCell.price + id
+        self.discountLabel.accessibilityIdentifier = AccesibilityIds.ProductCell.discount + id
+        self.shippingLabel.accessibilityIdentifier = AccesibilityIds.ProductCell.shipping + id
+        self.thumbnailView.accessibilityIdentifier = AccesibilityIds.ProductCell.image + id
     }
 
     override func awakeFromNib() {

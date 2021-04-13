@@ -46,5 +46,16 @@ class ProductVC: UIViewController, ProductViewProtocol {
 
         let url = presenter?.imageUrl
         self.imageView.kf.setImage(with: url)
+
+        setAccesibilityIds()
+    }
+
+    private func setAccesibilityIds() {
+
+        self.titleLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.title
+        self.priceLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.price
+        self.imageView.accessibilityIdentifier = AccesibilityIds.ProductDetail.image
+        self.shippingLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.shipping
+        self.discountLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.discount
     }
 }

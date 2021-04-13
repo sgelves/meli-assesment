@@ -51,6 +51,9 @@
 		58D972402624FFE300093B97 /* ProductPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9723F2624FFE300093B97 /* ProductPresenterTests.swift */; };
 		58D97261262511B700093B97 /* PriceFormaterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D97260262511B700093B97 /* PriceFormaterMock.swift */; };
 		58D97266262511DC00093B97 /* ProductViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D97265262511DC00093B97 /* ProductViewMock.swift */; };
+		58D9729C262557EE00093B97 /* AccesibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9729B262557EE00093B97 /* AccesibilityIds.swift */; };
+		58D972A02625598900093B97 /* AccesibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9729B262557EE00093B97 /* AccesibilityIds.swift */; };
+		58D972A42625599200093B97 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58D9720B2624EDEA00093B97 /* Localizable.strings */; };
 		58EFEB6F26225C97003D4629 /* ProductListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFEB6E26225C97003D4629 /* ProductListPresenterTests.swift */; };
 		58EFEB7E26227694003D4629 /* ProductsServicesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFEB7D26227694003D4629 /* ProductsServicesMock.swift */; };
 		58EFEB86262276BA003D4629 /* ProductListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EFEB85262276BA003D4629 /* ProductListViewMock.swift */; };
@@ -125,6 +128,7 @@
 		58D9723F2624FFE300093B97 /* ProductPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenterTests.swift; sourceTree = "<group>"; };
 		58D97260262511B700093B97 /* PriceFormaterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormaterMock.swift; sourceTree = "<group>"; };
 		58D97265262511DC00093B97 /* ProductViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewMock.swift; sourceTree = "<group>"; };
+		58D9729B262557EE00093B97 /* AccesibilityIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesibilityIds.swift; sourceTree = "<group>"; };
 		58EFEB6E26225C97003D4629 /* ProductListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterTests.swift; sourceTree = "<group>"; };
 		58EFEB7D26227694003D4629 /* ProductsServicesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServicesMock.swift; sourceTree = "<group>"; };
 		58EFEB85262276BA003D4629 /* ProductListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewMock.swift; sourceTree = "<group>"; };
@@ -375,6 +379,7 @@
 				586E0CDE261F840D000769CE /* LogUtils.swift */,
 				58D9711F26249ADF00093B97 /* PriceFormaterUtils.swift */,
 				58D972122624EE5300093B97 /* String+Localized.swift */,
+				58D9729B262557EE00093B97 /* AccesibilityIds.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D972A42625599200093B97 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +702,7 @@
 				58D9710326248C5E00093B97 /* PricesList.swift in Sources */,
 				581B73E8261E584500F37C79 /* Networking.swift in Sources */,
 				58D971252624A1EF00093B97 /* ProductPriceType.swift in Sources */,
+				58D9729C262557EE00093B97 /* AccesibilityIds.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
 				58D9712A2624A8AD00093B97 /* ShippingMethod.swift in Sources */,
 				58D9712026249ADF00093B97 /* PriceFormaterUtils.swift in Sources */,
@@ -738,6 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581B73BC261E42BA00F37C79 /* meli_assesmentUITests.swift in Sources */,
+				58D972A02625598900093B97 /* AccesibilityIds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
