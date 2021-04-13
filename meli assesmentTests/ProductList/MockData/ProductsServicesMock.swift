@@ -13,7 +13,7 @@ class ProductsServicesMock: ProductsServiceProtocol {
 
     static func getMockedResult(_ amount: Int) -> [Product] {
         return (0..<amount).map { index -> Product in
-            Product(id: "\(index)", title: "", thumbnail: "", price: 0.0)
+            Product(id: "\(index)", title: "", thumbnail: "", price: 0.0, shipping: ShippingMethod(freeShipping: true))
         }
     }
 
@@ -38,5 +38,10 @@ class ProductsServicesMock: ProductsServiceProtocol {
         default:
             completion(.success(ProductsServicesMock.getMockedResult(producListResultAmount)))
         }
+    }
+
+    static func getProductDescription(byId id: String,
+                                     completion: @escaping (Result<ProductDescription, ApiError>) -> Void) {
+        completion(.success(ProductDescription(plainText: " ")))
     }
 }

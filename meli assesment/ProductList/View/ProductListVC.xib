@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,6 +28,7 @@
                     <subviews>
                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-sm-nGe">
                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <color key="color" name="SiluetsColor"/>
                         </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,11 +58,11 @@
                                 <constraint firstAttribute="height" constant="50" id="zDQ-vs-fsm"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" name="MainColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" name="Brackground"/>
                     <constraints>
                         <constraint firstItem="iR0-Sv-cnI" firstAttribute="centerY" secondItem="wni-g5-Hss" secondAttribute="centerY" constant="-50" id="Dpp-vG-LyX"/>
                         <constraint firstItem="ra4-GY-ceM" firstAttribute="top" secondItem="iR0-Sv-cnI" secondAttribute="bottom" constant="10" id="ccS-al-XOO"/>
@@ -86,11 +87,11 @@
                                 <constraint firstAttribute="width" constant="250" id="eD8-D4-Dar"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" name="MainColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" name="Brackground"/>
                     <constraints>
                         <constraint firstItem="cWL-NB-fSw" firstAttribute="top" secondItem="dqY-8O-Cf9" secondAttribute="bottom" constant="10" id="Hcg-3v-HzM"/>
                         <constraint firstItem="dqY-8O-Cf9" firstAttribute="centerY" secondItem="d7a-jg-G0g" secondAttribute="centerY" constant="-50" id="Rdy-D7-jJf"/>
@@ -98,13 +99,15 @@
                         <constraint firstItem="dqY-8O-Cf9" firstAttribute="centerX" secondItem="d7a-jg-G0g" secondAttribute="centerX" id="d3p-jG-Wb8"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-26-NkI">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-26-NkI">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" name="SiluetsColor"/>
+                    <color key="sectionIndexBackgroundColor" name="Brackground"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Qy3-AR-h4R"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" name="Brackground"/>
             <constraints>
                 <constraint firstItem="d7a-jg-G0g" firstAttribute="width" secondItem="Qy3-AR-h4R" secondAttribute="width" id="0mn-t1-hvo"/>
                 <constraint firstItem="wni-g5-Hss" firstAttribute="centerX" secondItem="Qy3-AR-h4R" secondAttribute="centerX" id="2MQ-ot-wPf"/>
@@ -127,8 +130,14 @@
     <resources>
         <image name="find_icon" width="1024" height="1024"/>
         <image name="not_found_icon" width="3000" height="3000"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="Brackground">
+            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.0" green="0.0" blue="0.093983656695099921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SiluetsColor">
+            <color red="0.71888264338938701" green="0.72077204905399661" blue="0.72948043108845095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

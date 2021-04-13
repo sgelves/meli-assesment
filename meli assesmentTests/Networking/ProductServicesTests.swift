@@ -47,7 +47,7 @@ class ProductServicesTests: XCTestCase {
         mock.register()
 
         let productJson = (try? JSONDecoder().decode(Product.self, from: jsonData!))
-            ?? Product(id: "", title: "", thumbnail: "", price: 0.0)
+            ?? Product(id: "", title: "", thumbnail: "", price: 0.0, shipping: ShippingMethod(freeShipping: true))
 
         let requestExpectation = expectation(description: "Request should complete")
         let requestErrorExpectation = expectation(description: "Request should fail with error")
@@ -68,6 +68,48 @@ class ProductServicesTests: XCTestCase {
 
         // When
         ProductsServices.getSingleProducts(byId: "") { result in
+            // Then
+            switch result {
+            case .success:
+                XCTFail("Request should fail")
+            case let .failure(err):
+                XCTAssertEqual(ApiError.invalidParameters, err)
+                requestErrorExpectation.fulfill()
+            }
+        }
+
+        wait(for: [requestExpectation, requestErrorExpectation], timeout: 10.0)
+    }
+
+    func testGetProductDescription() throws {
+        // Given
+        let productId = "MLB1698042476"
+        let productPath = String(format: ProductsServices.Paths.productDescription.rawValue, productId)
+        let apiEndpoint = URL(string: "\(Networking.Domain.develop.rawValue)\(productPath)")!
+        let jsonData = try readLocalFile(forName: "ProductDescriptionResponse")
+
+        let mock = Mock(url: apiEndpoint, ignoreQuery: true,  dataType: .json, statusCode: 200, data: [.get: jsonData!])
+        mock.register()
+
+        let productJson = (try? JSONDecoder().decode(ProductDescription.self, from: jsonData!))
+            ?? ProductDescription(plainText: "")
+
+        let requestExpectation = expectation(description: "Request should complete")
+        let requestErrorExpectation = expectation(description: "Request should fail with error")
+        // When
+        ProductsServices.getProductDescription(byId: productId) { result in
+            // Then
+            switch result {
+            case let .success(description):
+                XCTAssertTrue(description.plainText == productJson.plainText)
+                requestExpectation.fulfill()
+            case .failure:
+                XCTFail("Request should succeed")
+            }
+        }
+
+        // When
+        ProductsServices.getProductDescription(byId: "") { result in
             // Then
             switch result {
             case .success:

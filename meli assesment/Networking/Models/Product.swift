@@ -11,12 +11,16 @@ struct Product: Codable, CustomStringConvertible {
     var title: String
     var thumbnail: String
     var price: Float
+    var prices: PricesList?
+    var shipping: ShippingMethod
 
     enum CodingKeys: String, CodingKey {
         case id
         case title
         case thumbnail
         case price
+        case prices
+        case shipping
     }
 
     // protocol

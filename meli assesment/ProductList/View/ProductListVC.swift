@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol ProductListViewProtocol: AnyObject {
 
@@ -52,15 +53,6 @@ class ProductListVC: UIViewController {
 
         self.reloadView(state: .empty)
     }
-
-    func presentProduct (product: Product) {
-
-        let viewController = ProductVC()
-        self.navigationController?.present(viewController, animated: true, completion: {
-            viewController.titleLabel.text = product.title
-            viewController.priceLabel.text = "\(product.price)"
-        })
-    }
 }
 
 extension ProductListVC: ProductListViewProtocol {
@@ -74,7 +66,7 @@ extension ProductListVC: ProductListViewProtocol {
             self.view.bringSubviewToFront(tableView)
             self.tableView.reloadData()
         case .noMoreData:
-            break
+            self.view.bringSubviewToFront(tableView)
         case .noData:
             self.view.bringSubviewToFront(noResultView)
         default:
@@ -120,16 +112,21 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
 
         if indexPath.row < self.presenter?.products.count ?? 0
            , let model = self.presenter?.products[indexPath.row] {
-            cell.titleLabel.text = model.title
-            cell.priceLabel.text = "\(model.price)"
+
+            let pres = ProductPresenter(view: cell, data: model)
+            cell.presenter = pres
+            cell.setUp()
         }
+
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row < self.presenter?.products.count ?? 0
            , let model = self.presenter?.products[indexPath.row] {
-            presentProduct(product: model)
+
+            let viewController = ProductVC(with: model)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }
