@@ -15,7 +15,8 @@ class MeliAssesmentUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // In UI tests it’s important to set the initial state - such as interface orientation
+        // - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {
@@ -24,65 +25,68 @@ class MeliAssesmentUITests: XCTestCase {
 
     func testProductListPresented() throws {
         // UI tests must launch the application that they test.
+
+        // GIVEN
         let app = XCUIApplication()
         app.launch()
 
-        app.navigationBars["meli_assesment.ProductListVC"].searchFields["Buscar"].tap()
-
+        let buscarSearchField = app.navigationBars["meli_assesment.ProductListVC"].searchFields["Buscar"]
+        buscarSearchField.tap()
+        
         let mKey = app/*@START_MENU_TOKEN@*/.keys["M"]/*[[".keyboards.keys[\"M\"]",".keys[\"M\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         mKey.tap()
 
         let aKey = app/*@START_MENU_TOKEN@*/.keys["a"]/*[[".keyboards.keys[\"a\"]",".keys[\"a\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         aKey.tap()
-
+        
         let qKey = app/*@START_MENU_TOKEN@*/.keys["q"]/*[[".keyboards.keys[\"q\"]",".keys[\"q\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         qKey.tap()
 
-        let app2 = app
-        app2/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards",".buttons[\"buscar\"]",".buttons[\"Search\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards",".buttons[\"buscar\"]",".buttons[\"Search\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
 
-        XCTAssertTrue(app.tables.cells.otherElements.containing(
-                        .image,
-                        identifier:"Imagen del producto en la celda MCO608744399").element.exists)
+        let tablesQuery = app.tables
 
-        app.tables.cells.otherElements.containing(
-            .image,
-            identifier:"Imagen del producto en la celda MCO608744399").element.tap()
+        for index in 0..<3 {
 
-        let scrollViewsQuery = app.scrollViews
+            // WHEN
+            let anyCell = tablesQuery.cells.element(boundBy: index).firstMatch
 
-        XCTAssertTrue(scrollViewsQuery.otherElements.containing(
-                        .staticText,
-                        identifier:"Título del detalle del producto").children(matching: .other).element.exists)
-        scrollViewsQuery.otherElements.containing(
-            .staticText,
-            identifier:"Título del detalle del producto").children(matching: .other).element.tap()
-        
-        let atrSButton = app.navigationBars["meli_assesment.ProductVC"].buttons["Atrás"]
-        atrSButton.tap()
+            let titleText = anyCell.staticTexts[AccesibilityIds.ProductCell.title].label
+            let priceText = anyCell.staticTexts[AccesibilityIds.ProductCell.price].label
 
-        let tablesQuery = app2.tables
-        XCTAssertTrue(tablesQuery.cells.staticTexts["Envío del producto en la celda MCO552813380"].exists)
-        tablesQuery.cells.staticTexts["Envío del producto en la celda MCO552813380"].tap()
+            let hasDiscount = !anyCell.staticTexts[AccesibilityIds.ProductCell.discount].label.isEmpty
+            let hasFreeShipping = !anyCell.staticTexts[AccesibilityIds.ProductCell.shipping].label.isEmpty
 
-        let elementsQuery = scrollViewsQuery.otherElements
-        XCTAssertTrue(elementsQuery.staticTexts["Envío del detalle del producto"].exists)
-        elementsQuery.staticTexts["Envío del detalle del producto"].tap()
+            // THEN
 
-        atrSButton.tap()
+            // Checko for cell components
+            XCTAssertTrue(anyCell.exists)
 
-        XCTAssertTrue(tablesQuery.staticTexts["Título del producto en la celda MCO552813380"].exists)
-        tablesQuery.staticTexts["Título del producto en la celda MCO552813380"].tap()
+            XCTAssertTrue(anyCell.staticTexts[AccesibilityIds.ProductCell.title].exists)
+            XCTAssertTrue(anyCell.staticTexts[AccesibilityIds.ProductCell.price].exists)
+            XCTAssertTrue(anyCell.images[AccesibilityIds.ProductCell.image].exists)
 
-        XCTAssertTrue(elementsQuery.staticTexts["Título del detalle del producto"].exists)
-        elementsQuery.staticTexts["Título del detalle del producto"].tap()
+            // Checko for cell's detail components
+            anyCell.tap()
 
-        atrSButton.tap()
+            let elementsQuery = app.scrollViews.otherElements
+            XCTAssertTrue(elementsQuery.staticTexts[AccesibilityIds.ProductDetail.title].exists)
+            XCTAssertTrue(elementsQuery.staticTexts[AccesibilityIds.ProductDetail.price].exists)
+            XCTAssertTrue(elementsQuery.images[AccesibilityIds.ProductDetail.image].exists)
+            XCTAssertTrue(elementsQuery.staticTexts[AccesibilityIds.ProductDetail.detail].exists)
 
-        XCTAssertTrue(tablesQuery.staticTexts["Precio del producto en la celda MCO607778497"].exists)
-        tablesQuery.staticTexts["Precio del producto en la celda MCO607778497"].tap()
+            if hasDiscount {
+                XCTAssertTrue(elementsQuery.staticTexts[AccesibilityIds.ProductDetail.discount].exists)
+            }
+            if hasFreeShipping {
+                XCTAssertTrue(elementsQuery.staticTexts[AccesibilityIds.ProductDetail.shipping].exists)
+            }
 
-        XCTAssertTrue(elementsQuery.staticTexts["Precio del detalle del producto"].exists)
-        elementsQuery.staticTexts["Precio del detalle del producto"].tap()
+            XCTAssertEqual(titleText, elementsQuery.staticTexts[AccesibilityIds.ProductDetail.title].label)
+            XCTAssertEqual(priceText, elementsQuery.staticTexts[AccesibilityIds.ProductDetail.price].label)
+
+
+            app.navigationBars["meli_assesment.ProductVC"].buttons.firstMatch.tap() // back button
+        }
     }
 }

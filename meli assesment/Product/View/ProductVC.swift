@@ -54,8 +54,11 @@ class ProductVC: UIViewController, ProductViewProtocol {
 
         self.titleLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.title
         self.priceLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.price
-        self.imageView.accessibilityIdentifier = AccesibilityIds.ProductDetail.image
         self.shippingLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.shipping
         self.discountLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.discount
+        self.descriptionLabel.accessibilityIdentifier = AccesibilityIds.ProductDetail.detail
+        self.imageView.accessibilityIdentifier = AccesibilityIds.ProductDetail.image
+
+        self.imageView.accessibilityLabel = AccesibilityIds.ProductDetail.image
     }
 }
