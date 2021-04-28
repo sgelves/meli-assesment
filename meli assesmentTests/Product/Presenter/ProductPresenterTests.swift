@@ -46,13 +46,13 @@ class ProductPresenterTests: XCTestCase {
         // WHEN
         let presenter = ProductPresenter(view: view,
                                          data: product,
-                                         formatter: PriceFormaterMock.self)
+                                         formatter: PriceFormaterStub.self)
 
-        let mockDiscount = PriceFormaterMock
+        let mockDiscount = PriceFormaterStub
             .verifyGetDiscountFrom(originialPrice: promPrice.regularAmount!, andWithDiscount: promPrice.amount)
-        let mockSegment = PriceFormaterMock
+        let mockSegment = PriceFormaterStub
             .verifyGetSegmentedPayment(for: promPrice.regularAmount!, intoMonths: ProductPresenter.segmentedMonths)
-        let mockPrice = PriceFormaterMock
+        let mockPrice = PriceFormaterStub
             .verifyFormatPrice(fromFloat: product.price)
 
         // THEN

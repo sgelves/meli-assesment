@@ -6,8 +6,10 @@
 //
 
 @testable import meli_assesment
+import Foundation
 
-class PriceFormaterMock: PriceFormatterProtocol {
+class PriceFormaterStub: PriceFormatterProtocol {
+    static let currencyFormatter: NumberFormatter = PriceFormaterUtils.currencyFormatter
 
     static func verifyGetDiscountFrom(originialPrice original: Float, andWithDiscount discount: Float) -> String {
         return "Éxito \(original) \(discount)"

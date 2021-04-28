@@ -8,8 +8,20 @@
 import XCTest
 @testable import meli_assesment
 
-class PriceFormaterUtilsMock: PriceFormaterUtils {
-    static var currForm: NumberFormatter?
+class PriceFormaterUtilsMock: PriceFormatterProtocol {
+    static var currencyFormatter: NumberFormatter = PriceFormaterUtils.currencyFormatter
+
+    static func getDiscountFrom(originialPrice original: Float, andWithDiscount discount: Float) -> String {
+        return PriceFormaterUtils.getDiscountFrom(originialPrice: original, andWithDiscount: discount)
+    }
+
+    static func getSegmentedPayment(for price: Float, intoMonths months: Int) -> String? {
+        return PriceFormaterUtils.getSegmentedPayment(for: price, intoMonths: months)
+    }
+
+    static func formatPrice(fromFloat price: Float) -> String? {
+        return PriceFormaterUtils.formatPrice(fromFloat: price)
+    }
 }
 
 class PriceFormatterUtilsTests: XCTestCase {
@@ -28,7 +40,7 @@ class PriceFormatterUtilsTests: XCTestCase {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "es_CO")
         formatter.numberStyle = .currency
-        PriceFormaterUtilsMock.currForm = formatter
+        PriceFormaterUtilsMock.currencyFormatter = formatter
 
         // WHEN
         let formatted = PriceFormaterUtilsMock.formatPrice(fromFloat: 1222.0)
@@ -55,7 +67,7 @@ class PriceFormatterUtilsTests: XCTestCase {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "es_CO")
         formatter.numberStyle = .currency
-        PriceFormaterUtilsMock.currForm = formatter
+        PriceFormaterUtilsMock.currencyFormatter = formatter
 
         let value: Float = 54000.0
         let months: Int = 36
