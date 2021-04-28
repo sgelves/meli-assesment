@@ -24,7 +24,7 @@ class Networking {
     var parameters: [String: String]
     var domain: Domain
 
-    static var sessionManager = Session()
+    static var sessionManager = Session() // no risk of race condition
 
     init(path: String, parameters: [String: String] = [:], method: HTTPMethod = .get, domain: Domain = .develop) {
         self.path = path
