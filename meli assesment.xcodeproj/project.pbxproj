@@ -36,6 +36,7 @@
 		58641B2A2645ACD600B964CE /* ProductListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58641B292645ACD600B964CE /* ProductListViewProtocol.swift */; };
 		58646643264C370100CA1662 /* ProductIpadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646641264C370100CA1662 /* ProductIpadCollectionViewCell.swift */; };
 		58646644264C370100CA1662 /* ProductIpadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58646642264C370100CA1662 /* ProductIpadCollectionViewCell.xib */; };
+		58646646264C51DF00CA1662 /* ProductViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646645264C51DF00CA1662 /* ProductViewProtocol.swift */; };
 		586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEBB2620E5A2000C9F9F /* ProductResponse.json */; };
 		586DDEC4262109ED000C9F9F /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DDEC2262109ED000C9F9F /* ProductCellView.swift */; };
 		586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEC3262109ED000C9F9F /* ProductCellView.xib */; };
@@ -120,6 +121,7 @@
 		58641B292645ACD600B964CE /* ProductListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewProtocol.swift; sourceTree = "<group>"; };
 		58646641264C370100CA1662 /* ProductIpadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductIpadCollectionViewCell.swift; sourceTree = "<group>"; };
 		58646642264C370100CA1662 /* ProductIpadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductIpadCollectionViewCell.xib; sourceTree = "<group>"; };
+		58646645264C51DF00CA1662 /* ProductViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewProtocol.swift; sourceTree = "<group>"; };
 		586DDEBB2620E5A2000C9F9F /* ProductResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
 		586DDEC2262109ED000C9F9F /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		586DDEC3262109ED000C9F9F /* ProductCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 		584587B62623E1000084E6CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				58646645264C51DF00CA1662 /* ProductViewProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				58641B272645AC7100B964CE /* ProductListIpadVC.swift in Sources */,
 				58D971182624967D00093B97 /* ProductPresenter.swift in Sources */,
 				58641B2A2645ACD600B964CE /* ProductListViewProtocol.swift in Sources */,
+				58646646264C51DF00CA1662 /* ProductViewProtocol.swift in Sources */,
 				581B739A261E42B600F37C79 /* AppDelegate.swift in Sources */,
 				581B739C261E42B600F37C79 /* SceneDelegate.swift in Sources */,
 				58D972132624EE5300093B97 /* String+Localized.swift in Sources */,

@@ -7,12 +7,6 @@
 
 import UIKit
 
-protocol ProductViewProtocol: AnyObject {
-
-    var presenter: ProductPresenterProtocol? { get set }
-
-}
-
 class ProductVC: UIViewController, ProductViewProtocol {
 
     @IBOutlet weak var imageView: UIImageView!

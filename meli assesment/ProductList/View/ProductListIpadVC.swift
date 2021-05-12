@@ -11,6 +11,11 @@ class ProductListIpadVC: UIViewController, ProductListViewProtocol {
 
     lazy var presenter: ProductListPresProtocol? = ProductListPresenter(view: self)
 
+    let cvMargins = UIEdgeInsets.zero
+    let cvCellAmount: CGFloat = 3
+    let cvCellSpacing: CGFloat = 10
+    let cvCellHeight: CGFloat = 300
+
     var listSate: ListViewState  = .empty
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -26,7 +31,23 @@ class ProductListIpadVC: UIViewController, ProductListViewProtocol {
     }
 
     func reloadView(state: ListViewState) {
-        self.collectionView.reloadData()
+        switch state {
+        case .loading:
+            // self.view.bringSubviewToFront(activityIndicator)
+            break
+        case .withData:
+            // self.view.bringSubviewToFront(tableView)
+            self.collectionView.reloadData()
+        case .noMoreData:
+            // self.view.bringSubviewToFront(tableView)
+            break
+        case .noData:
+            // self.view.bringSubviewToFront(noResultView)
+            break
+        default:
+            // self.view.bringSubviewToFront(emptyView)
+            break
+        }
     }
 }
 
@@ -51,14 +72,45 @@ extension ProductListIpadVC: UICollectionViewDataSource {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductIpadCollectionViewCell.identifier,
                                                          for: indexPath) as? ProductIpadCollectionViewCell {
 
-            cell.prepareForReuse(product: self.presenter?.products[indexPath.row])
-            return cell
+            if indexPath.row < self.presenter?.products.count ?? 0
+               , let model = self.presenter?.products[indexPath.row] {
+
+                let pres = ProductPresenter(view: cell, data: model)
+                cell.presenter = pres
+                cell.setUp()
+                return cell
+            }
         }
 
         return ProductIpadCollectionViewCell()
     }
 }
 
-extension ProductListIpadVC: UICollectionViewDelegate {
+extension ProductListIpadVC: UICollectionViewDelegateFlowLayout {
 
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let expectedWidth = collectionView.bounds.width / self.cvCellAmount - self.cvCellSpacing*(self.cvCellAmount - 1)
+        return CGSize(width: expectedWidth, height: self.cvCellHeight)
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return self.cvMargins
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return self.cvCellSpacing
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return self.cvCellSpacing
+    }
 }
