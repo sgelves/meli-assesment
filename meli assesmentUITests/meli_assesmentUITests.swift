@@ -30,17 +30,10 @@ class MeliAssesmentUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        let buscarSearchField = app.navigationBars["meli_assesment.ProductListVC"].searchFields["Buscar"]
+        let buscarSearchField = app.navigationBars["meli_assesment.ProductListVC"].searchFields.element.firstMatch
         buscarSearchField.tap()
-        
-        let mKey = app/*@START_MENU_TOKEN@*/.keys["M"]/*[[".keyboards.keys[\"M\"]",".keys[\"M\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        mKey.tap()
 
-        let aKey = app/*@START_MENU_TOKEN@*/.keys["a"]/*[[".keyboards.keys[\"a\"]",".keys[\"a\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        aKey.tap()
-        
-        let qKey = app/*@START_MENU_TOKEN@*/.keys["q"]/*[[".keyboards.keys[\"q\"]",".keys[\"q\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        qKey.tap()
+        buscarSearchField.typeText("Maquina")
 
         app/*@START_MENU_TOKEN@*/.buttons["Search"]/*[[".keyboards",".buttons[\"buscar\"]",".buttons[\"Search\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
 
