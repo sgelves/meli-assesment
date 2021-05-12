@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -114,8 +114,10 @@
                 <constraint firstItem="d7a-jg-G0g" firstAttribute="height" secondItem="Qy3-AR-h4R" secondAttribute="height" id="38N-iA-U4o"/>
                 <constraint firstItem="wni-g5-Hss" firstAttribute="height" secondItem="Qy3-AR-h4R" secondAttribute="height" id="9sx-ox-j6A"/>
                 <constraint firstItem="Qy3-AR-h4R" firstAttribute="bottom" secondItem="tR8-26-NkI" secondAttribute="bottom" id="FIw-6Y-o3q"/>
+                <constraint firstItem="tR8-26-NkI" firstAttribute="leading" secondItem="Qy3-AR-h4R" secondAttribute="leading" constant="100" id="MWL-Wz-dpY"/>
                 <constraint firstItem="tR8-26-NkI" firstAttribute="leading" secondItem="Qy3-AR-h4R" secondAttribute="leading" id="Qzp-lU-bzx"/>
                 <constraint firstItem="wni-g5-Hss" firstAttribute="width" secondItem="Qy3-AR-h4R" secondAttribute="width" id="TZD-6R-Vuf"/>
+                <constraint firstItem="Qy3-AR-h4R" firstAttribute="trailing" secondItem="tR8-26-NkI" secondAttribute="trailing" constant="100" id="abK-kc-CQF"/>
                 <constraint firstItem="0Ot-Ub-1pM" firstAttribute="centerY" secondItem="Qy3-AR-h4R" secondAttribute="centerY" constant="-20" id="aea-Ng-XJH"/>
                 <constraint firstItem="Qy3-AR-h4R" firstAttribute="trailing" secondItem="tR8-26-NkI" secondAttribute="trailing" id="bST-rb-9JX"/>
                 <constraint firstItem="d7a-jg-G0g" firstAttribute="centerY" secondItem="Qy3-AR-h4R" secondAttribute="centerY" id="ccD-B4-PhP"/>
@@ -124,6 +126,20 @@
                 <constraint firstItem="tR8-26-NkI" firstAttribute="top" secondItem="Qy3-AR-h4R" secondAttribute="top" id="h9A-XB-cQI"/>
                 <constraint firstItem="wni-g5-Hss" firstAttribute="centerY" secondItem="Qy3-AR-h4R" secondAttribute="centerY" id="iBO-ZQ-E5Y"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="abK-kc-CQF"/>
+                    <exclude reference="MWL-Wz-dpY"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <include reference="abK-kc-CQF"/>
+                    <exclude reference="bST-rb-9JX"/>
+                    <include reference="MWL-Wz-dpY"/>
+                    <exclude reference="Qzp-lU-bzx"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="-207.24637681159422" y="86.383928571428569"/>
         </view>
     </objects>
@@ -131,13 +147,13 @@
         <image name="find_icon" width="1024" height="1024"/>
         <image name="not_found_icon" width="3000" height="3000"/>
         <namedColor name="Brackground">
-            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MainColor">
-            <color red="0.0" green="0.0" blue="0.093983656695099921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.0" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SiluetsColor">
-            <color red="0.71888264338938701" green="0.72077204905399661" blue="0.72948043108845095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.71899998188018799" green="0.72100001573562622" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

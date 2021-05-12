@@ -9,7 +9,6 @@
 
 class ProductListViewMock: ProductListViewProtocol {
 
-
     var currentState: ListViewState?
     var reloadViewCalled: Bool = false
     var listSate: ListViewState = .withData

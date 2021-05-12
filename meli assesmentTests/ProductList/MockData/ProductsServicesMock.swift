@@ -36,7 +36,7 @@ class ProductsServicesMock: ProductsServiceProtocol {
             completion(.success([]))
 
         default:
-            completion(.success(ProductsServicesMock.getMockedResult(producListResultAmount)))
+            completion(.success(ProductsServicesMock.getMockedResult(limit)))
         }
     }
 

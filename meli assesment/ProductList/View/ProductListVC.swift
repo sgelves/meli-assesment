@@ -8,18 +8,9 @@
 import UIKit
 import Kingfisher
 
-protocol ProductListViewProtocol: AnyObject {
-
-    var presenter: ProductListPresProtocol? { get }
-
-    var listSate: ListViewState { get }
-
-    func reloadView(state: ListViewState)
-}
-
 class ProductListVC: UIViewController {
 
-    var presenter: ProductListPresProtocol?
+    lazy var presenter: ProductListPresProtocol? = ProductListPresenter(view: self)
 
     var listSate: ListViewState = .empty
 
@@ -32,8 +23,6 @@ class ProductListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.presenter = ProductListPresenter(view: self)
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
