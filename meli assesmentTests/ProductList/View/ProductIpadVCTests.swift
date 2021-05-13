@@ -78,8 +78,6 @@ class ProductListIpadVCTests: XCTestCase {
                 return
             }
 
-            XCTAssertEqual(vc.listSate, ListViewState.withData)
-
             XCTAssertEqual(vc.collectionView.dataSource?.collectionView(vc.collectionView, numberOfItemsInSection:0),
                            presenter.limit)
 

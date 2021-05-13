@@ -11,7 +11,5 @@ protocol ProductListViewProtocol: AnyObject {
 
     var presenter: ProductListPresProtocol? { get }
 
-    var listSate: ListViewState { get }
-
     func reloadView(state: ListViewState)
 }

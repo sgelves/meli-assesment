@@ -12,8 +12,6 @@ class ProductListVC: UIViewController {
 
     lazy var presenter: ProductListPresProtocol? = ProductListPresenter(view: self)
 
-    var listSate: ListViewState = .empty
-
     lazy var searchController: SearchControllerProtocol = SearchController(searchResultsController: nil)
 
     @IBOutlet weak var tableView: UITableView!
