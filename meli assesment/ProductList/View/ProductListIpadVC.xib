@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListIpadVC" customModule="meli_assesment" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="IWx-rm-lW3" id="HHU-8V-tus"/>
                 <outlet property="collectionView" destination="vAC-ad-8ls" id="uXY-WO-MCg"/>
+                <outlet property="emptyView" destination="Q5p-hu-mpY" id="HLJ-Wt-kKW"/>
+                <outlet property="noResultView" destination="WHu-gy-bsE" id="mdz-we-D9W"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,8 +24,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWx-rm-lW3" userLabel="Activity Indicator" customClass="ActivityIndicatorView" customModule="meli_assesment" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHu-gy-bsE" userLabel="No Result View" customClass="NoResultView" customModule="meli_assesment" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" name="Brackground"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-hu-mpY" userLabel="Empty View" customClass="EmptyView" customModule="meli_assesment" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" name="Brackground"/>
+                </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vAC-ad-8ls">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="15" y="44" width="384" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gMI-oB-SWc">
                         <size key="itemSize" width="128" height="128"/>
@@ -34,15 +50,30 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vAC-ad-8ls" secondAttribute="trailing" id="Vg8-ct-d1W"/>
-                <constraint firstItem="vAC-ad-8ls" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c0x-5P-rKx"/>
+                <constraint firstItem="WHu-gy-bsE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4Xa-xT-qE5"/>
+                <constraint firstItem="IWx-rm-lW3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4gr-Hd-zVv"/>
+                <constraint firstItem="Q5p-hu-mpY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kyd-UP-hU8"/>
+                <constraint firstItem="Q5p-hu-mpY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Pht-Sr-X8p"/>
+                <constraint firstItem="WHu-gy-bsE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Pjs-IR-ksJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vAC-ad-8ls" secondAttribute="trailing" constant="15" id="Vg8-ct-d1W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IWx-rm-lW3" secondAttribute="bottom" id="Y62-8z-HyY"/>
+                <constraint firstItem="vAC-ad-8ls" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="c0x-5P-rKx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WHu-gy-bsE" secondAttribute="bottom" id="m6O-a6-cZw"/>
+                <constraint firstItem="Q5p-hu-mpY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mAa-Lq-xg1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vAC-ad-8ls" secondAttribute="bottom" id="mHt-Cg-ZKI"/>
                 <constraint firstItem="vAC-ad-8ls" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mhx-nB-9P2"/>
+                <constraint firstItem="WHu-gy-bsE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qiA-5u-HMF"/>
+                <constraint firstItem="IWx-rm-lW3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ulo-Yy-KZK"/>
+                <constraint firstItem="IWx-rm-lW3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vEs-3U-XoB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q5p-hu-mpY" secondAttribute="bottom" id="xYQ-cu-8QS"/>
             </constraints>
             <point key="canvasLocation" x="-25" y="78"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="Brackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
