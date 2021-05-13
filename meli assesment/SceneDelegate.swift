@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: MainCoordinatorProtocol?
 
     @available(iOS 13.0, *)
     func scene(_ scene: UIScene,
@@ -19,13 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: windowScene)
 
-        let nav = UINavigationController()
+        coordinator = MainCoordinator.start()
 
-        let viewController = ProductListVC()
-
-        nav.viewControllers = [viewController]
-
-        window?.rootViewController = nav
+        window?.rootViewController = coordinator?.navController
         window?.makeKeyAndVisible()
     }
 

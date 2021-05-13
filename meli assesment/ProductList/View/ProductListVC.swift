@@ -109,11 +109,11 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         if indexPath.row < self.presenter?.products.count ?? 0
            , let model = self.presenter?.products[indexPath.row] {
 
-            let viewController = ProductVC(with: model)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            MainCoordinator.navigateProductDetai(arg: model)
         }
     }
 }

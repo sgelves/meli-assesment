@@ -23,14 +23,16 @@ class MeliAssesmentUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testProductListPresented() throws {
-        // UI tests must launch the application that they test.
+    func testProductListIphone() throws {
+        guard UIDevice.current.userInterfaceIdiom == .phone else {
+            return
+        }
 
         // GIVEN
         let app = XCUIApplication()
         app.launch()
 
-        let buscarSearchField = app.navigationBars["meli_assesment.ProductListVC"].searchFields.element.firstMatch
+        let buscarSearchField = app.navigationBars.searchFields.element.firstMatch
         buscarSearchField.tap()
 
         buscarSearchField.typeText("Maquina")

@@ -43,6 +43,8 @@
 		58646655264C905200CA1662 /* NoResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58646653264C905200CA1662 /* NoResultView.xib */; };
 		58646658264C92F000CA1662 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646656264C92F000CA1662 /* ActivityIndicatorView.swift */; };
 		58646659264C92F000CA1662 /* ActivityIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58646657264C92F000CA1662 /* ActivityIndicatorView.xib */; };
+		5864665F264D932F00CA1662 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864665E264D932E00CA1662 /* MainCoordinator.swift */; };
+		58646662264DACA600CA1662 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646661264DACA600CA1662 /* MainCoordinatorTests.swift */; };
 		586DDEBC2620E5A2000C9F9F /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEBB2620E5A2000C9F9F /* ProductResponse.json */; };
 		586DDEC4262109ED000C9F9F /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DDEC2262109ED000C9F9F /* ProductCellView.swift */; };
 		586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586DDEC3262109ED000C9F9F /* ProductCellView.xib */; };
@@ -134,6 +136,8 @@
 		58646653264C905200CA1662 /* NoResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoResultView.xib; sourceTree = "<group>"; };
 		58646656264C92F000CA1662 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		58646657264C92F000CA1662 /* ActivityIndicatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicatorView.xib; sourceTree = "<group>"; };
+		5864665E264D932E00CA1662 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		58646661264DACA600CA1662 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
 		586DDEBB2620E5A2000C9F9F /* ProductResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
 		586DDEC2262109ED000C9F9F /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		586DDEC3262109ED000C9F9F /* ProductCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellView.xib; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 		5844518C261FBD3D0054380D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				58646660264DABE400CA1662 /* Views */,
 				58D9721C2624F72300093B97 /* PriceFormatterUtilsTests.swift */,
 			);
 			path = Utils;
@@ -412,6 +417,15 @@
 				58646653264C905200CA1662 /* NoResultView.xib */,
 				58646656264C92F000CA1662 /* ActivityIndicatorView.swift */,
 				58646657264C92F000CA1662 /* ActivityIndicatorView.xib */,
+				5864665E264D932E00CA1662 /* MainCoordinator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58646660264DABE400CA1662 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58646661264DACA600CA1662 /* MainCoordinatorTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -772,6 +786,7 @@
 				586E0CDF261F840D000769CE /* LogUtils.swift in Sources */,
 				581C8E3C26223521004D6968 /* ProductListPresenter.swift in Sources */,
 				581B73F7261E85AC00F37C79 /* ProductsServices.swift in Sources */,
+				5864665F264D932F00CA1662 /* MainCoordinator.swift in Sources */,
 				58646654264C905200CA1662 /* NoResultView.swift in Sources */,
 				58D9710826248CCA00093B97 /* SinglePrice.swift in Sources */,
 				584587BA2623E1550084E6CE /* ProductVC.swift in Sources */,
@@ -796,6 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D9721D2624F72300093B97 /* PriceFormatterUtilsTests.swift in Sources */,
+				58646662264DACA600CA1662 /* MainCoordinatorTests.swift in Sources */,
 				58D97266262511DC00093B97 /* ProductViewMock.swift in Sources */,
 				583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */,
 				58445190261FBDB10054380D /* NetworkingTests.swift in Sources */,

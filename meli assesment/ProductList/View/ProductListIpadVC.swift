@@ -96,6 +96,17 @@ extension ProductListIpadVC: UICollectionViewDataSource {
     }
 }
 
+extension ProductListIpadVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        if indexPath.row < self.presenter?.products.count ?? 0
+           , let model = presenter?.products[indexPath.row] {
+
+            MainCoordinator.navigateProductDetai(arg: model)
+        }
+    }
+}
+
 extension ProductListIpadVC: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView,
