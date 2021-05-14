@@ -12,6 +12,7 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var coordinator: MainCoordinatorProtocol?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -22,13 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
 
-            let nav = UINavigationController()
+            coordinator = MainCoordinator.start()
 
-            let viewController = ProductListVC()
-
-            nav.viewControllers = [viewController]
-
-            window?.rootViewController = nav
+            window?.rootViewController = coordinator?.navController
             window?.makeKeyAndVisible()
         }
 

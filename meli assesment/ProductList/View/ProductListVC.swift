@@ -8,20 +8,9 @@
 import UIKit
 import Kingfisher
 
-protocol ProductListViewProtocol: AnyObject {
-
-    var presenter: ProductListPresProtocol? { get }
-
-    var listSate: ListViewState { get }
-
-    func reloadView(state: ListViewState)
-}
-
 class ProductListVC: UIViewController {
 
-    var presenter: ProductListPresProtocol?
-
-    var listSate: ListViewState = .empty
+    lazy var presenter: ProductListPresProtocol? = ProductListPresenter(view: self)
 
     lazy var searchController: SearchControllerProtocol = SearchController(searchResultsController: nil)
 
@@ -32,8 +21,6 @@ class ProductListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.presenter = ProductListPresenter(view: self)
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -122,11 +109,11 @@ extension ProductListVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         if indexPath.row < self.presenter?.products.count ?? 0
            , let model = self.presenter?.products[indexPath.row] {
 
-            let viewController = ProductVC(with: model)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            MainCoordinator.navigateProductDetai(arg: model)
         }
     }
 }

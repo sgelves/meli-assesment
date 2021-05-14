@@ -13,7 +13,11 @@ class ProductsServicesMock: ProductsServiceProtocol {
 
     static func getMockedResult(_ amount: Int) -> [Product] {
         return (0..<amount).map { index -> Product in
-            Product(id: "\(index)", title: "", thumbnail: "", price: 0.0, shipping: ShippingMethod(freeShipping: true))
+            Product(id: "\(index)",
+                    title: "Title \(index)",
+                    thumbnail: "",
+                    price: Float(index),
+                    shipping: ShippingMethod(freeShipping: true))
         }
     }
 
@@ -36,7 +40,7 @@ class ProductsServicesMock: ProductsServiceProtocol {
             completion(.success([]))
 
         default:
-            completion(.success(ProductsServicesMock.getMockedResult(producListResultAmount)))
+            completion(.success(ProductsServicesMock.getMockedResult(limit)))
         }
     }
 

@@ -1,15 +1,17 @@
 //
-//  ProductCellView.swift
+//  ProductIpadCollectionViewCell.swift
 //  meli assesment
 //
-//  Created by Sergio Gelves on 9/04/21.
+//  Created by Sergio Gelves on 12/05/21.
 //
 
 import UIKit
 
-class ProductCellView: UITableViewCell, ProductViewProtocol {
+class ProductIpadCollectionViewCell: UICollectionViewCell, ProductViewProtocol {
 
     var presenter: ProductPresenterProtocol?
+
+    static let identifier = "productIpadCollectionViewCell"
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -18,7 +20,9 @@ class ProductCellView: UITableViewCell, ProductViewProtocol {
     @IBOutlet weak var segmentedLabel: UILabel!
     @IBOutlet weak var shippingLabel: UILabel!
 
-    static let identifier = "productCell"
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 
     func setUp() {
         self.titleLabel.text = presenter?.title
@@ -40,13 +44,5 @@ class ProductCellView: UITableViewCell, ProductViewProtocol {
         self.thumbnailView.accessibilityIdentifier = AccesibilityIds.ProductCell.image
 
         self.thumbnailView.accessibilityLabel = AccesibilityIds.ProductCell.image
-    }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
 }
