@@ -20,9 +20,10 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
 
-    var presenter = LoginPresenter()
+    @IBOutlet weak var userError: UILabel!
+    @IBOutlet weak var passwordError: UILabel!
 
-    var errorViews: [UIView] = []
+    var presenter = LoginPresenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,23 +38,29 @@ class LoginVC: UIViewController {
         self.presenter.validateLogin(user: userField.text, pass: passField.text)
     }
 
-    func setError(forField field: UITextField) {
-        field.layer.borderColor = UIColor.red.cgColor
-        field.layer.borderWidth = 1.0
-        field.layer.cornerRadius = 5
-        field.clipsToBounds = true
+    func setError(forField field: UITextField, label: UILabel, andMessage msg: String) {
+
+        UIView.animate(withDuration: 0.5) {
+
+            field.layer.borderColor = UIColor.red.cgColor
+            field.layer.borderWidth = 1.0
+            field.layer.cornerRadius = 5
+            field.clipsToBounds = true
+
+            label.text = msg
+            label.isHidden = false
+        }
     }
 
     func removeFieldsError() {
 
-        userField.layer.borderWidth = 0
-        passField.layer.borderWidth = 0
+        UIView.animate(withDuration: 0.5) {
+            self.userField.layer.borderWidth = 0
+            self.passField.layer.borderWidth = 0
 
-        for view in errorViews {
-            view.removeFromSuperview()
+            self.userError.isHidden = true
+            self.passwordError.isHidden = true
         }
-
-        errorViews.removeAll()
     }
 }
 
@@ -70,11 +77,17 @@ extension LoginVC: LoginViewProtocol {
 
             switch error {
             case .invalidEmail:
-                self.setError(forField: userField)
+                self.setError(forField: userField,
+                              label: userError,
+                              andMessage: "Email no válido")
             case .emptyEmail:
-                self.setError(forField: userField)
+                self.setError(forField: userField,
+                              label: userError,
+                              andMessage: "El email no puede ser vacío")
             case .emptyPassword:
-                self.setError(forField: passField)
+                self.setError(forField: passField,
+                              label: passwordError,
+                              andMessage: "El password debe tener por lo menos 1 carácter")
             }
         }
     }
