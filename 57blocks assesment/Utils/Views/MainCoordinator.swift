@@ -10,9 +10,9 @@ import UIKit
 protocol TabBarCoordinatorProtocol {
 
     var tabController: UITabBarController! { get }
-    var navController: [UINavigationController]  { get }
+    var navController: [UINavigationController] { get }
 
-    static var coordinator: TabBarCoordinatorProtocol!  { get set }
+    static var coordinator: TabBarCoordinatorProtocol! { get set }
 }
 
 class MainCoordinator: MainCoordinatorProtocol {

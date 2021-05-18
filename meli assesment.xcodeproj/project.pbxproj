@@ -99,6 +99,8 @@
 		58CAA725264EC42900878DA2 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CAA722264EC42900878DA2 /* LoginVC.xib */; };
 		58CAA726264EC42900878DA2 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CAA722264EC42900878DA2 /* LoginVC.xib */; };
 		58CAA728264EC81800878DA2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CAA727264EC81800878DA2 /* Media.xcassets */; };
+		58CAA72A264ED2F300878DA2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA729264ED2F300878DA2 /* LoginPresenter.swift */; };
+		58CAA72D264ED6C400878DA2 /* SimpleStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA72C264ED6C400878DA2 /* SimpleStorageService.swift */; };
 		58D9710326248C5E00093B97 /* PricesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9710226248C5E00093B97 /* PricesList.swift */; };
 		58D9710826248CCA00093B97 /* SinglePrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9710726248CCA00093B97 /* SinglePrice.swift */; };
 		58D971182624967D00093B97 /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D971172624967D00093B97 /* ProductPresenter.swift */; };
@@ -199,6 +201,8 @@
 		58CAA721264EC42900878DA2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		58CAA722264EC42900878DA2 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		58CAA727264EC81800878DA2 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		58CAA729264ED2F300878DA2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		58CAA72C264ED6C400878DA2 /* SimpleStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStorageService.swift; sourceTree = "<group>"; };
 		58D9710226248C5E00093B97 /* PricesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesList.swift; sourceTree = "<group>"; };
 		58D9710726248CCA00093B97 /* SinglePrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePrice.swift; sourceTree = "<group>"; };
 		58D971172624967D00093B97 /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
@@ -532,6 +536,7 @@
 		58CAA715264EBE1900878DA2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				58CAA72B264ED69F00878DA2 /* storage */,
 				58CAA718264EBE4F00878DA2 /* Views */,
 			);
 			path = Utils;
@@ -582,8 +587,17 @@
 		58CAA720264EC2D400878DA2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				58CAA729264ED2F300878DA2 /* LoginPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		58CAA72B264ED69F00878DA2 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				58CAA72C264ED6C400878DA2 /* SimpleStorageService.swift */,
+			);
+			path = storage;
 			sourceTree = "<group>";
 		};
 		58D9723D2624FFB700093B97 /* Product */ = {
@@ -1080,6 +1094,7 @@
 				58CAA6E0264EBACE00878DA2 /* PricesList.swift in Sources */,
 				58CAA6E2264EBACE00878DA2 /* Networking.swift in Sources */,
 				58CAA6E3264EBACE00878DA2 /* ProductPriceType.swift in Sources */,
+				58CAA72D264ED6C400878DA2 /* SimpleStorageService.swift in Sources */,
 				58CAA6E4264EBACE00878DA2 /* AccesibilityIds.swift in Sources */,
 				58CAA6E5264EBACE00878DA2 /* ViewController.swift in Sources */,
 				58CAA724264EC42900878DA2 /* LoginVC.swift in Sources */,
@@ -1093,6 +1108,7 @@
 				58CAA6EE264EBACE00878DA2 /* NoResultView.swift in Sources */,
 				58CAA6EF264EBACE00878DA2 /* SinglePrice.swift in Sources */,
 				58CAA71C264EBEA900878DA2 /* MainCoordinatorProtocol.swift in Sources */,
+				58CAA72A264ED2F300878DA2 /* LoginPresenter.swift in Sources */,
 				58CAA6F1264EBACE00878DA2 /* SearchController.swift in Sources */,
 				58CAA6F2264EBACE00878DA2 /* ListViewStateType.swift in Sources */,
 				58CAA6F4264EBACE00878DA2 /* ProductPresenter.swift in Sources */,

@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="_7blocks_assesment" customModuleProvider="target">
             <connections>
+                <outlet property="loginButton" destination="zqE-V3-5lf" id="Xam-da-uM4"/>
+                <outlet property="passField" destination="Hhy-QA-gdy" id="1CP-mR-7Sk"/>
+                <outlet property="userField" destination="4w6-3Z-c7d" id="tmF-QA-siC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,50 +23,60 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedex-nobg" translatesAutoresizingMaskIntoConstraints="NO" id="zTH-EY-8zg">
-                    <rect key="frame" x="107" y="228" width="200" height="100"/>
+                    <rect key="frame" x="107" y="303" width="200" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="7mK-bk-NhX"/>
                         <constraint firstAttribute="width" constant="200" id="ysH-Uk-CZV"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EW-R8-8iU">
-                    <rect key="frame" x="20" y="348" width="374" height="200"/>
+                    <rect key="frame" x="20" y="423" width="374" height="150"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mch-9q-Nxs">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lMi-k4-Cby">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="97.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="46.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hec-97-Ehw">
-                                            <rect key="frame" x="0.0" y="38.5" width="63.5" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="13" width="63.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4w6-3Z-c7d">
-                                            <rect key="frame" x="68.5" y="32" width="305.5" height="34"/>
+                                            <rect key="frame" x="68.5" y="6.5" width="305.5" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hrM-Ym-q50">
-                                    <rect key="frame" x="0.0" y="102.5" width="374" height="97.5"/>
+                                    <rect key="frame" x="0.0" y="51.5" width="374" height="47"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clave: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gl-jT-0gS">
-                                            <rect key="frame" x="0.0" y="38.5" width="51" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="13.5" width="51" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-QA-gdy">
-                                            <rect key="frame" x="67" y="32" width="307" height="34"/>
+                                            <rect key="frame" x="67" y="6.5" width="307" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqE-V3-5lf">
+                                    <rect key="frame" x="0.0" y="103.5" width="374" height="46.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Inicia sesión">
+                                        <color key="titleColor" red="0.82371336220000002" green="0.58640569450000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="loginPressed:" destination="-1" eventType="touchUpInside" id="jqi-Cb-ARe"/>
+                                    </connections>
+                                </button>
                             </subviews>
                         </stackView>
                     </subviews>
@@ -71,8 +84,7 @@
                     <constraints>
                         <constraint firstItem="mch-9q-Nxs" firstAttribute="top" secondItem="8EW-R8-8iU" secondAttribute="top" id="BLf-fk-wor"/>
                         <constraint firstItem="mch-9q-Nxs" firstAttribute="leading" secondItem="8EW-R8-8iU" secondAttribute="leading" id="TOu-w7-hbU"/>
-                        <constraint firstAttribute="height" constant="200" id="XVT-cH-QtP"/>
-                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="jZH-0t-G4E"/>
+                        <constraint firstAttribute="height" constant="150" id="XVT-cH-QtP"/>
                         <constraint firstAttribute="bottom" secondItem="mch-9q-Nxs" secondAttribute="bottom" id="kGb-pG-mbH"/>
                         <constraint firstAttribute="trailing" secondItem="mch-9q-Nxs" secondAttribute="trailing" id="nyp-rx-HBh"/>
                     </constraints>
@@ -83,10 +95,26 @@
             <constraints>
                 <constraint firstItem="8EW-R8-8iU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1t7-PT-pQK"/>
                 <constraint firstItem="zTH-EY-8zg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="681-gS-OZN"/>
-                <constraint firstItem="8EW-R8-8iU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ASO-Qj-35j"/>
+                <constraint firstItem="8EW-R8-8iU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="ASO-Qj-35j"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8EW-R8-8iU" secondAttribute="trailing" constant="20" id="IHt-yQ-EhD"/>
                 <constraint firstItem="8EW-R8-8iU" firstAttribute="top" secondItem="zTH-EY-8zg" secondAttribute="bottom" constant="20" id="U5t-zm-8cO"/>
+                <constraint firstItem="8EW-R8-8iU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="Xmh-cM-1ei"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8EW-R8-8iU" secondAttribute="trailing" constant="100" id="phQ-wC-9eu"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="phQ-wC-9eu"/>
+                    <exclude reference="Xmh-cM-1ei"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="IHt-yQ-EhD"/>
+                    <include reference="phQ-wC-9eu"/>
+                    <exclude reference="1t7-PT-pQK"/>
+                    <include reference="Xmh-cM-1ei"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </view>
     </objects>
