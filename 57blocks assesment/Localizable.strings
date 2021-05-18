@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  meli assesment
+
+  Created by Sergio Gelves on 17/05/21.
+  
+*/
+
+"emailLabel" = "Usuario";
+"passwordLabel" = "Clave";
+"emailInvalidError" = "Email inválido.";
+"emailEmptyError" = "El email no puede ser vacío.";
+"passwordEmptyError" = "El password debe tener por lo menos 1 carácter.";
+"loginButton" = "Iniciar sesión";

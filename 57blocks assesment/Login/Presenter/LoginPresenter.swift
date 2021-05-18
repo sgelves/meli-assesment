@@ -7,21 +7,6 @@
 
 import Foundation
 
-protocol LoginPresenterProtocol {
-
-    var view: LoginViewProtocol? { get }
-
-    func validateLogin(user: String?, pass: String?)
-
-    func isValidEmail(_ email: String) -> Bool
-}
-
-enum LoginError: Error {
-    case emptyEmail
-    case emptyPassword
-    case invalidEmail
-}
-
 class LoginPresenter: LoginPresenterProtocol {
 
     weak var view: LoginViewProtocol?

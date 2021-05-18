@@ -13,9 +13,11 @@
             <connections>
                 <outlet property="loginButton" destination="zqE-V3-5lf" id="Xam-da-uM4"/>
                 <outlet property="passField" destination="Hhy-QA-gdy" id="1CP-mR-7Sk"/>
+                <outlet property="passLabel" destination="1Gl-jT-0gS" id="90u-g8-5Cd"/>
                 <outlet property="passwordError" destination="aPp-RW-xko" id="BKd-NN-7Jc"/>
                 <outlet property="userError" destination="b7g-By-j3I" id="VJM-q4-Hdh"/>
                 <outlet property="userField" destination="4w6-3Z-c7d" id="tmF-QA-siC"/>
+                <outlet property="userLabel" destination="hec-97-Ehw" id="330-UO-8mt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

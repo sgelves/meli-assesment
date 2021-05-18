@@ -7,17 +7,13 @@
 
 import UIKit
 
-protocol LoginViewProtocol: AnyObject {
-
-    var presenter: LoginPresenter { get }
-
-    func logincValidateResult(result: Result<Any?, LoginError>)
-}
-
 class LoginVC: UIViewController {
 
     @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var passField: UITextField!
+
+    @IBOutlet weak var userLabel: UILabel!
+    @IBOutlet weak var passLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
 
     @IBOutlet weak var userError: UILabel!
@@ -28,14 +24,15 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter.view = self
+        self.presenter.view = self
+
+        self.setLocalizedTexts()
     }
 
-    @IBAction func loginPressed(_ sender: Any) {
-
-        self.removeFieldsError()
-
-        self.presenter.validateLogin(user: userField.text, pass: passField.text)
+    private func setLocalizedTexts() {
+        self.userLabel.text = Localized.emailLabel.toLocalized()
+        self.passLabel.text = Localized.passwordLabel.toLocalized()
+        self.loginButton.setTitle(Localized.loginButton.toLocalized(), for: .normal)
     }
 
     func setError(forField field: UITextField, label: UILabel, andMessage msg: String) {
@@ -62,6 +59,13 @@ class LoginVC: UIViewController {
             self.passwordError.isHidden = true
         }
     }
+
+    @IBAction func loginPressed(_ sender: Any) {
+
+        self.removeFieldsError()
+
+        self.presenter.validateLogin(user: userField.text, pass: passField.text)
+    }
 }
 
 extension LoginVC: LoginViewProtocol {
@@ -79,15 +83,15 @@ extension LoginVC: LoginViewProtocol {
             case .invalidEmail:
                 self.setError(forField: userField,
                               label: userError,
-                              andMessage: "Email no válido")
+                              andMessage: Localized.emailInvalidError.toLocalized())
             case .emptyEmail:
                 self.setError(forField: userField,
                               label: userError,
-                              andMessage: "El email no puede ser vacío")
+                              andMessage: Localized.emailEmptyError.toLocalized())
             case .emptyPassword:
                 self.setError(forField: passField,
                               label: passwordError,
-                              andMessage: "El password debe tener por lo menos 1 carácter")
+                              andMessage: Localized.passwordEmptyError.toLocalized())
             }
         }
     }
