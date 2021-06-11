@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.4'
 
-target 'meli assesment' do
+def available_pods
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
 
@@ -11,6 +11,14 @@ target 'meli assesment' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'SwiftLint'
+end
+
+target 'meli assesment' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for meli assesment
+  available_pods
 
   target 'meli assesmentTests' do
     inherit! :search_paths
@@ -23,4 +31,18 @@ target 'meli assesment' do
     # Pods for testing
   end
 
+end
+
+target '57blocks assesment' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for meli assesment
+  available_pods
+
+  target '57blocks assesmentTests' do
+    inherit! :search_paths
+    pod 'Mocker', '~> 2.2.0'
+    # Pods for testing
+  end
 end

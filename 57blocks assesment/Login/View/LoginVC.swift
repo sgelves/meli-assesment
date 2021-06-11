@@ -19,12 +19,12 @@ class LoginVC: UIViewController {
     @IBOutlet weak var userError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
 
-    var presenter = LoginPresenter()
+    var presenter: LoginPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.presenter.view = self
+        self.presenter = LoginPresenter(view: self)
 
         self.setLocalizedTexts()
     }

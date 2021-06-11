@@ -11,6 +11,13 @@ class LoginPresenter: LoginPresenterProtocol {
 
     weak var view: LoginViewProtocol?
 
+    let service: SecureStorageServiceProtocol.Type
+
+    init(view: LoginViewProtocol, service: SecureStorageServiceProtocol.Type = SecureStorageService.self) {
+        self.view = view
+        self.service = service
+    }
+
     func validateLogin(user: String?, pass: String?) {
 
         var validUser = false
@@ -31,6 +38,12 @@ class LoginPresenter: LoginPresenterProtocol {
 
         if validUser && validPass {
             self.view?.logincValidateResult(result: .success(nil))
+
+            let value = try? self.service.storeValue(withKey: .token, andValue: "")
+
+            guard value != nil else {
+                return
+            }
         }
     }
 

@@ -7,7 +7,7 @@
 
 protocol LoginViewProtocol: AnyObject {
 
-    var presenter: LoginPresenter { get }
+    var presenter: LoginPresenter! { get }
 
     func logincValidateResult(result: Result<Any?, LoginError>)
 }
