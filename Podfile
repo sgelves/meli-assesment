@@ -33,14 +33,14 @@ target 'meli assesment' do
 
 end
 
-target '57blocks assesment' do
+target '_57blocks assesment' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
 
   # Pods for meli assesment
   available_pods
 
-  target '57blocks assesmentTests' do
+  target '_57blocks assesmentTests' do
     inherit! :search_paths
     pod 'Mocker', '~> 2.2.0'
     # Pods for testing

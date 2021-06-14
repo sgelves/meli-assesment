@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		264A4FC6AC882B3752F6A33B /* libPods-57blocks assesmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DA10BA5E011BCF4FF5303C /* libPods-57blocks assesmentTests.a */; };
+		1ED632FD83CD7EC7A6F0A1A7 /* libPods-_57blocks assesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBDB05A0C92FE0CBC2B664F /* libPods-_57blocks assesment.a */; };
 		2B2577E8ABE72C162BC2DF4F /* libPods-meli assesmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */; };
-		2B3ADF4AA143D6FD9E1E3BC4 /* libPods-57blocks assesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ED052838BB32BF6ACD6AB1 /* libPods-57blocks assesment.a */; };
 		35C714DDCB79FF519086FB4A /* libPods-meli assesmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */; };
 		58080657262357AD00CF3455 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58080656262357AD00CF3455 /* SearchController.swift */; };
 		580FD0D4265D8DEF00B73962 /* SecureStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580FD0D3265D8DEF00B73962 /* SecureStorageService.swift */; };
@@ -27,7 +26,6 @@
 		581B7402261E8CD000F37C79 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7401261E8CD000F37C79 /* ProductResponse.swift */; };
 		581C8E3C26223521004D6968 /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C8E3B26223521004D6968 /* ProductListPresenter.swift */; };
 		581C8E4126225261004D6968 /* ListViewStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C8E4026225261004D6968 /* ListViewStateType.swift */; };
-		5839014F2673DA7C00B5E18A /* _7blocks_assesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5839014E2673DA7C00B5E18A /* _7blocks_assesmentTests.swift */; };
 		583EAE142620988A00E66C2A /* ProductServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EAE132620988A00E66C2A /* ProductServicesTests.swift */; };
 		58445190261FBDB10054380D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844518F261FBDB10054380D /* NetworkingTests.swift */; };
 		584451BE261FCF340054380D /* ProductQueryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 584451A0261FC61E0054380D /* ProductQueryResponse.json */; };
@@ -60,6 +58,7 @@
 		586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586E0C6C261F516F000769CE /* GoogleService-Info.plist */; };
 		586E0CDF261F840D000769CE /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586E0CDE261F840D000769CE /* LogUtils.swift */; };
 		5870CE0726434BEC00CA2DCF /* ProductIpadVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5870CE0626434BEC00CA2DCF /* ProductIpadVCTests.swift */; };
+		589655D42677F7D700D736B7 /* _57blocks_assesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589655D32677F7D700D736B7 /* _57blocks_assesmentTests.swift */; };
 		58CAA6DD264EBACE00878DA2 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581B7401261E8CD000F37C79 /* ProductResponse.swift */; };
 		58CAA6DE264EBACE00878DA2 /* CustomUIViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646650264C8FAA00CA1662 /* CustomUIViewProtocol.swift */; };
 		58CAA6E0264EBACE00878DA2 /* PricesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9710226248C5E00093B97 /* PricesList.swift */; };
@@ -99,9 +98,7 @@
 		58CAA717264EBE4200878DA2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA716264EBE4200878DA2 /* MainCoordinator.swift */; };
 		58CAA71B264EBEA900878DA2 /* MainCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA71A264EBEA900878DA2 /* MainCoordinatorProtocol.swift */; };
 		58CAA71C264EBEA900878DA2 /* MainCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA71A264EBEA900878DA2 /* MainCoordinatorProtocol.swift */; };
-		58CAA723264EC42900878DA2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA721264EC42900878DA2 /* LoginVC.swift */; };
 		58CAA724264EC42900878DA2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA721264EC42900878DA2 /* LoginVC.swift */; };
-		58CAA725264EC42900878DA2 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CAA722264EC42900878DA2 /* LoginVC.xib */; };
 		58CAA726264EC42900878DA2 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CAA722264EC42900878DA2 /* LoginVC.xib */; };
 		58CAA728264EC81800878DA2 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CAA727264EC81800878DA2 /* Media.xcassets */; };
 		58CAA72A264ED2F300878DA2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CAA729264ED2F300878DA2 /* LoginPresenter.swift */; };
@@ -145,17 +142,18 @@
 			remoteGlobalIDString = 581B7395261E42B600F37C79;
 			remoteInfo = "meli assesment";
 		};
-		583901512673DA7C00B5E18A /* PBXContainerItemProxy */ = {
+		589655D62677F7D700D736B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 581B738E261E42B600F37C79 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 58CAA6DA264EBACE00878DA2;
-			remoteInfo = "57blocks assesment";
+			remoteInfo = "_57blocks assesment";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0DC661B8C860D598CC0A92A8 /* Pods-meli assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.debug.xcconfig"; sourceTree = "<group>"; };
+		36540AA5B4F03D7C34B13503 /* libPods-_57blocks assesmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-_57blocks assesmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48552C71EC42D696FAFDF3D2 /* Pods-meli assesment-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4CAFA0EDA307B075F5AA66D5 /* Pods-meli assesment-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesment-meli assesmentUITests/Pods-meli assesment-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58080656262357AD00CF3455 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
@@ -180,9 +178,6 @@
 		581B7401261E8CD000F37C79 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		581C8E3B26223521004D6968 /* ProductListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
 		581C8E4026225261004D6968 /* ListViewStateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewStateType.swift; sourceTree = "<group>"; };
-		5839014C2673DA7C00B5E18A /* 57blocks assesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "57blocks assesmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5839014E2673DA7C00B5E18A /* _7blocks_assesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _7blocks_assesmentTests.swift; sourceTree = "<group>"; };
-		583901502673DA7C00B5E18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		583EAE132620988A00E66C2A /* ProductServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServicesTests.swift; sourceTree = "<group>"; };
 		5844518F261FBDB10054380D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		584451A0261FC61E0054380D /* ProductQueryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductQueryResponse.json; sourceTree = "<group>"; };
@@ -215,7 +210,10 @@
 		586E0C6C261F516F000769CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586E0CDE261F840D000769CE /* LogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
 		5870CE0626434BEC00CA2DCF /* ProductIpadVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductIpadVCTests.swift; sourceTree = "<group>"; };
-		58CAA712264EBACE00878DA2 /* 57blocks assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "57blocks assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		589655D12677F7D700D736B7 /* _57blocks assesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "_57blocks assesmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		589655D32677F7D700D736B7 /* _57blocks_assesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _57blocks_assesmentTests.swift; sourceTree = "<group>"; };
+		589655D52677F7D700D736B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58CAA712264EBACE00878DA2 /* _57blocks assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "_57blocks assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CAA713264EBACE00878DA2 /* meli assesment copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "meli assesment copy-Info.plist"; path = "/Volumes/T7/ios/meli assesment/meli assesment copy-Info.plist"; sourceTree = "<absolute>"; };
 		58CAA716264EBE4200878DA2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		58CAA71A264EBEA900878DA2 /* MainCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -242,8 +240,11 @@
 		58D9729B262557EE00093B97 /* AccesibilityIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesibilityIds.swift; sourceTree = "<group>"; };
 		58EFEB7D26227694003D4629 /* ProductsServicesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServicesMock.swift; sourceTree = "<group>"; };
 		58EFEB85262276BA003D4629 /* ProductListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewMock.swift; sourceTree = "<group>"; };
+		5CBDB05A0C92FE0CBC2B664F /* libPods-_57blocks assesment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-_57blocks assesment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8142BF37B13DEFE8F926D849 /* Pods-meli assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesment.release.xcconfig"; path = "Target Support Files/Pods-meli assesment/Pods-meli assesment.release.xcconfig"; sourceTree = "<group>"; };
 		84E13B0F1739222263B2817E /* Pods-meli assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		856C371FB62A75A36F918010 /* Pods-_57blocks assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-_57blocks assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-_57blocks assesmentTests/Pods-_57blocks assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		8895D4F28FEDA2912E75455C /* Pods-_57blocks assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-_57blocks assesment.debug.xcconfig"; path = "Target Support Files/Pods-_57blocks assesment/Pods-_57blocks assesment.debug.xcconfig"; sourceTree = "<group>"; };
 		8EDFEE1FE1302F33AC9613C7 /* Pods-57blocks assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-57blocks assesment.debug.xcconfig"; path = "Target Support Files/Pods-57blocks assesment/Pods-57blocks assesment.debug.xcconfig"; sourceTree = "<group>"; };
 		92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD8E1EA3BA5F217BB0CF609 /* Pods-meli assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,11 +252,11 @@
 		B2A64E8E154FBC91D4CE2C1C /* Pods-57blocks assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-57blocks assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-57blocks assesmentTests/Pods-57blocks assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meli assesmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7ED052838BB32BF6ACD6AB1 /* libPods-57blocks assesment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-57blocks assesment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8DA10BA5E011BCF4FF5303C /* libPods-57blocks assesmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-57blocks assesmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F87E2826E809056CB5A575 /* Pods-57blocks assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-57blocks assesment.release.xcconfig"; path = "Target Support Files/Pods-57blocks assesment/Pods-57blocks assesment.release.xcconfig"; sourceTree = "<group>"; };
+		D8DEBB789B90052CFC6E04F9 /* Pods-_57blocks assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-_57blocks assesment.release.xcconfig"; path = "Target Support Files/Pods-_57blocks assesment/Pods-_57blocks assesment.release.xcconfig"; sourceTree = "<group>"; };
 		DBFEEAB74CC5D516D71863BD /* Pods-meli assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentUITests/Pods-meli assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9F14AFF8E67499DD68E11F6 /* Pods-meli assesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meli assesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-meli assesmentTests/Pods-meli assesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F81F956C2F7556191C5A7C19 /* Pods-_57blocks assesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-_57blocks assesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-_57blocks assesmentTests/Pods-_57blocks assesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,11 +284,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		583901492673DA7C00B5E18A /* Frameworks */ = {
+		589655CE2677F7D700D736B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264A4FC6AC882B3752F6A33B /* libPods-57blocks assesmentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3ADF4AA143D6FD9E1E3BC4 /* libPods-57blocks assesment.a in Frameworks */,
+				1ED632FD83CD7EC7A6F0A1A7 /* libPods-_57blocks assesment.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,23 +317,12 @@
 				C8F87E2826E809056CB5A575 /* Pods-57blocks assesment.release.xcconfig */,
 				A4D7822086C518C6D412598B /* Pods-57blocks assesmentTests.debug.xcconfig */,
 				B2A64E8E154FBC91D4CE2C1C /* Pods-57blocks assesmentTests.release.xcconfig */,
+				8895D4F28FEDA2912E75455C /* Pods-_57blocks assesment.debug.xcconfig */,
+				D8DEBB789B90052CFC6E04F9 /* Pods-_57blocks assesment.release.xcconfig */,
+				F81F956C2F7556191C5A7C19 /* Pods-_57blocks assesmentTests.debug.xcconfig */,
+				856C371FB62A75A36F918010 /* Pods-_57blocks assesmentTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		580FD0CF265D8D0700B73962 /* 57blocks assesmentTests */ = {
-			isa = PBXGroup;
-			children = (
-				580FD0D0265D8D3700B73962 /* Utils */,
-			);
-			path = "57blocks assesmentTests";
-			sourceTree = "<group>";
-		};
-		580FD0D0265D8D3700B73962 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		581B738D261E42B600F37C79 = {
@@ -342,9 +331,8 @@
 				581B7398261E42B600F37C79 /* meli assesment */,
 				58CAA714264EBE0200878DA2 /* 57blocks assesment */,
 				581B73AF261E42BA00F37C79 /* meli assesmentTests */,
-				580FD0CF265D8D0700B73962 /* 57blocks assesmentTests */,
 				581B73BA261E42BA00F37C79 /* meli assesmentUITests */,
-				5839014D2673DA7C00B5E18A /* 57blocks assesmentTests */,
+				589655D22677F7D700D736B7 /* _57blocks assesmentTests */,
 				581B7397261E42B600F37C79 /* Products */,
 				19E553A40B63388018AB7C3A /* Pods */,
 				7433342E850012A192D5A3D6 /* Frameworks */,
@@ -358,8 +346,8 @@
 				581B7396261E42B600F37C79 /* meli assesment.app */,
 				581B73AC261E42BA00F37C79 /* meli assesmentTests.xctest */,
 				581B73B7261E42BA00F37C79 /* meli assesmentUITests.xctest */,
-				58CAA712264EBACE00878DA2 /* 57blocks assesment.app */,
-				5839014C2673DA7C00B5E18A /* 57blocks assesmentTests.xctest */,
+				58CAA712264EBACE00878DA2 /* _57blocks assesment.app */,
+				589655D12677F7D700D736B7 /* _57blocks assesmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -470,15 +458,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		5839014D2673DA7C00B5E18A /* 57blocks assesmentTests */ = {
-			isa = PBXGroup;
-			children = (
-				5839014E2673DA7C00B5E18A /* _7blocks_assesmentTests.swift */,
-				583901502673DA7C00B5E18A /* Info.plist */,
-			);
-			path = "57blocks assesmentTests";
-			sourceTree = "<group>";
-		};
 		5844518C261FBD3D0054380D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +566,15 @@
 				5870CE0626434BEC00CA2DCF /* ProductIpadVCTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		589655D22677F7D700D736B7 /* _57blocks assesmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				589655D32677F7D700D736B7 /* _57blocks_assesmentTests.swift */,
+				589655D52677F7D700D736B7 /* Info.plist */,
+			);
+			path = "_57blocks assesmentTests";
 			sourceTree = "<group>";
 		};
 		58CAA714264EBE0200878DA2 /* 57blocks assesment */ = {
@@ -731,8 +719,8 @@
 				92564B6D58B68676E801F7E6 /* libPods-meli assesment.a */,
 				B382AE8D75225DF6FF7849BE /* libPods-meli assesmentTests.a */,
 				B9D7983E308E2983D08D2CFE /* libPods-meli assesmentUITests.a */,
-				C7ED052838BB32BF6ACD6AB1 /* libPods-57blocks assesment.a */,
-				C8DA10BA5E011BCF4FF5303C /* libPods-57blocks assesmentTests.a */,
+				5CBDB05A0C92FE0CBC2B664F /* libPods-_57blocks assesment.a */,
+				36540AA5B4F03D7C34B13503 /* libPods-_57blocks assesmentTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -798,28 +786,27 @@
 			productReference = 581B73B7261E42BA00F37C79 /* meli assesmentUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		5839014B2673DA7C00B5E18A /* 57blocks assesmentTests */ = {
+		589655D02677F7D700D736B7 /* _57blocks assesmentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 583901552673DA7C00B5E18A /* Build configuration list for PBXNativeTarget "57blocks assesmentTests" */;
+			buildConfigurationList = 589655D82677F7D700D736B7 /* Build configuration list for PBXNativeTarget "_57blocks assesmentTests" */;
 			buildPhases = (
-				99EB62293375473AA9CB19E3 /* [CP] Check Pods Manifest.lock */,
-				583901482673DA7C00B5E18A /* Sources */,
-				583901492673DA7C00B5E18A /* Frameworks */,
-				5839014A2673DA7C00B5E18A /* Resources */,
+				589655CD2677F7D700D736B7 /* Sources */,
+				589655CE2677F7D700D736B7 /* Frameworks */,
+				589655CF2677F7D700D736B7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				583901522673DA7C00B5E18A /* PBXTargetDependency */,
+				589655D72677F7D700D736B7 /* PBXTargetDependency */,
 			);
-			name = "57blocks assesmentTests";
-			productName = "57blocks assesmentTests";
-			productReference = 5839014C2673DA7C00B5E18A /* 57blocks assesmentTests.xctest */;
+			name = "_57blocks assesmentTests";
+			productName = "_57blocks assesmentTests";
+			productReference = 589655D12677F7D700D736B7 /* _57blocks assesmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		58CAA6DA264EBACE00878DA2 /* 57blocks assesment */ = {
+		58CAA6DA264EBACE00878DA2 /* _57blocks assesment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58CAA70F264EBACE00878DA2 /* Build configuration list for PBXNativeTarget "57blocks assesment" */;
+			buildConfigurationList = 58CAA70F264EBACE00878DA2 /* Build configuration list for PBXNativeTarget "_57blocks assesment" */;
 			buildPhases = (
 				7BDDB37CC331CA9D1AD66B44 /* [CP] Check Pods Manifest.lock */,
 				58CAA6DC264EBACE00878DA2 /* Sources */,
@@ -832,9 +819,9 @@
 			);
 			dependencies = (
 			);
-			name = "57blocks assesment";
+			name = "_57blocks assesment";
 			productName = "meli assesment";
-			productReference = 58CAA712264EBACE00878DA2 /* 57blocks assesment.app */;
+			productReference = 58CAA712264EBACE00878DA2 /* _57blocks assesment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -857,7 +844,7 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 581B7395261E42B600F37C79;
 					};
-					5839014B2673DA7C00B5E18A = {
+					589655D02677F7D700D736B7 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 58CAA6DA264EBACE00878DA2;
 					};
@@ -877,10 +864,10 @@
 			projectRoot = "";
 			targets = (
 				581B7395261E42B600F37C79 /* meli assesment */,
-				58CAA6DA264EBACE00878DA2 /* 57blocks assesment */,
+				58CAA6DA264EBACE00878DA2 /* _57blocks assesment */,
 				581B73AB261E42BA00F37C79 /* meli assesmentTests */,
 				581B73B6261E42BA00F37C79 /* meli assesmentUITests */,
-				5839014B2673DA7C00B5E18A /* 57blocks assesmentTests */,
+				589655D02677F7D700D736B7 /* _57blocks assesmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -895,7 +882,6 @@
 				581B73A6261E42BA00F37C79 /* LaunchScreen.storyboard in Resources */,
 				58646659264C92F000CA1662 /* ActivityIndicatorView.xib in Resources */,
 				586DDEC5262109ED000C9F9F /* ProductCellView.xib in Resources */,
-				58CAA725264EC42900878DA2 /* LoginVC.xib in Resources */,
 				586E0C6D261F516F000769CE /* GoogleService-Info.plist in Resources */,
 				58641B282645AC7100B964CE /* ProductListIpadVC.xib in Resources */,
 				5864664E264C78F600CA1662 /* EmptyView.xib in Resources */,
@@ -925,7 +911,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5839014A2673DA7C00B5E18A /* Resources */ = {
+		589655CF2677F7D700D736B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1068,7 +1054,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-57blocks assesment-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-_57blocks assesment-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1091,28 +1077,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-meli assesmentUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99EB62293375473AA9CB19E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-57blocks assesmentTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1157,7 +1121,6 @@
 				58D971252624A1EF00093B97 /* ProductPriceType.swift in Sources */,
 				58D9729C262557EE00093B97 /* AccesibilityIds.swift in Sources */,
 				581B739E261E42B600F37C79 /* ViewController.swift in Sources */,
-				58CAA723264EC42900878DA2 /* LoginVC.swift in Sources */,
 				58D9712A2624A8AD00093B97 /* ShippingMethod.swift in Sources */,
 				58D9712026249ADF00093B97 /* PriceFormaterUtils.swift in Sources */,
 				58D9712F2624AE2400093B97 /* ProductDescription.swift in Sources */,
@@ -1213,11 +1176,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		583901482673DA7C00B5E18A /* Sources */ = {
+		589655CD2677F7D700D736B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5839014F2673DA7C00B5E18A /* _7blocks_assesmentTests.swift in Sources */,
+				589655D42677F7D700D736B7 /* _57blocks_assesmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1275,10 +1238,10 @@
 			target = 581B7395261E42B600F37C79 /* meli assesment */;
 			targetProxy = 581B73B8261E42BA00F37C79 /* PBXContainerItemProxy */;
 		};
-		583901522673DA7C00B5E18A /* PBXTargetDependency */ = {
+		589655D72677F7D700D736B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 58CAA6DA264EBACE00878DA2 /* 57blocks assesment */;
-			targetProxy = 583901512673DA7C00B5E18A /* PBXContainerItemProxy */;
+			target = 58CAA6DA264EBACE00878DA2 /* _57blocks assesment */;
+			targetProxy = 589655D62677F7D700D736B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1553,53 +1516,51 @@
 			};
 			name = Release;
 		};
-		583901532673DA7C00B5E18A /* Debug */ = {
+		589655D92677F7D700D736B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D7822086C518C6D412598B /* Pods-57blocks assesmentTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9K52DH825;
-				INFOPLIST_FILE = "57blocks assesmentTests/Info.plist";
+				INFOPLIST_FILE = "_57blocks assesmentTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sgelves.-7blocks-assesmentTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "sgelves.-57blocks-assesmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/57blocks assesment.app/57blocks assesment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/_57blocks assesment.app/_57blocks assesment";
 			};
 			name = Debug;
 		};
-		583901542673DA7C00B5E18A /* Release */ = {
+		589655DA2677F7D700D736B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2A64E8E154FBC91D4CE2C1C /* Pods-57blocks assesmentTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9K52DH825;
-				INFOPLIST_FILE = "57blocks assesmentTests/Info.plist";
+				INFOPLIST_FILE = "_57blocks assesmentTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sgelves.-7blocks-assesmentTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "sgelves.-57blocks-assesmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/57blocks assesment.app/57blocks assesment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/_57blocks assesment.app/_57blocks assesment";
 			};
 			name = Release;
 		};
 		58CAA710264EBACE00878DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EDFEE1FE1302F33AC9613C7 /* Pods-57blocks assesment.debug.xcconfig */;
+			baseConfigurationReference = 8895D4F28FEDA2912E75455C /* Pods-_57blocks assesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1623,7 +1584,7 @@
 		};
 		58CAA711264EBACE00878DA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8F87E2826E809056CB5A575 /* Pods-57blocks assesment.release.xcconfig */;
+			baseConfigurationReference = D8DEBB789B90052CFC6E04F9 /* Pods-_57blocks assesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1683,16 +1644,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		583901552673DA7C00B5E18A /* Build configuration list for PBXNativeTarget "57blocks assesmentTests" */ = {
+		589655D82677F7D700D736B7 /* Build configuration list for PBXNativeTarget "_57blocks assesmentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				583901532673DA7C00B5E18A /* Debug */,
-				583901542673DA7C00B5E18A /* Release */,
+				589655D92677F7D700D736B7 /* Debug */,
+				589655DA2677F7D700D736B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58CAA70F264EBACE00878DA2 /* Build configuration list for PBXNativeTarget "57blocks assesment" */ = {
+		58CAA70F264EBACE00878DA2 /* Build configuration list for PBXNativeTarget "_57blocks assesment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58CAA710264EBACE00878DA2 /* Debug */,

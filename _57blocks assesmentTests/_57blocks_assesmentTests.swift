@@ -1,13 +1,13 @@
 //
-//  _7blocks_assesmentTests.swift
-//  57blocks assesmentTests
+//  _57blocks_assesmentTests.swift
+//  _57blocks assesmentTests
 //
-//  Created by Sergio Gelves on 11/06/21.
+//  Created by Sergio Gelves on 14/06/21.
 //
 
 import XCTest
 
-class _7blocks_assesmentTests: XCTestCase {
+class _57blocks_assesmentTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
