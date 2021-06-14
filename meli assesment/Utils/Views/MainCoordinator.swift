@@ -7,16 +7,11 @@
 
 import UIKit
 
-protocol MainCoordinatorProtocol {
-
-    var navController: UINavigationController { get }
-    static var coordinator: MainCoordinatorProtocol! { get set }
-
-    static func start() -> MainCoordinatorProtocol
+protocol ProductCoordinatorProtocol {
     static func navigateProductDetai(arg: Product)
 }
 
-class MainCoordinator: MainCoordinatorProtocol {
+class MainCoordinator: MainCoordinatorProtocol, ProductCoordinatorProtocol {
 
     var navController = UINavigationController()
 
